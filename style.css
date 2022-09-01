@@ -1,3 +1,14 @@
+/* Global Styles */
+
 body {
-    background: blue;
+
 }
+
+/* Navigation */
+
+#navigation h1 {
+    font-family: 'Mrs Sheppards';
+    font-size: 3em;
+    letter-spacing: .15em;
+}
+
