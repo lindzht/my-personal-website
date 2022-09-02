@@ -4,11 +4,80 @@ body {
 
 }
 
-/* Navigation */
+#logo img{
+    width: 20%;
+    max-width: 200px;
+}
 
-#navigation h1 {
+.content-wrapper {
+    position:relative;
+}
+
+
+/* Links */
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: rgba(0, 0, 0, 0.913);
+}
+
+a:visited {
+    color: #000;
+}
+
+a:hover {
+    color:rgba(248, 215, 0, 0.913);
+}
+
+a:active {
+    color:rgba(248, 215, 0, 0.913);
+}
+
+/* Headers */
+
+#headers h1 {
     font-family: 'Mrs Sheppards';
-    font-size: 3em;
+    font-size: 2em;
     letter-spacing: .15em;
 }
 
+#headers {
+    position: absolute;
+    top: 10em;
+}
+
+/* Circle */
+
+#circle {
+    background-image: linear-gradient(rgb(248, 215, 0), rgba(255, 255, 255, 0)); 
+    min-width: 43em;
+    min-height: 43em;
+    display: inline-block;
+    border-radius: 50%;
+    margin: 10px 0 0 25px;
+    z-index: 1;
+
+}
+
+.border-wrap {
+  background: linear-gradient(to right, red, rgb(38, 26, 47));
+  min-width: 50em;
+  min-height: 50em;
+  display: inline-block;
+  border-radius: 50%;
+  position: absolute;
+  left: 25%;
+  z-index: 1;
+
+}
+
+/* Body content */
+
+
+.display-text {
+    position: absolute;
+    left: 700px;
+    z-index: 2;
+}
