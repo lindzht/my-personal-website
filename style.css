@@ -9,8 +9,18 @@ body {
     max-width: 200px;
 }
 
-.content-wrapper {
+/* .nav-wrapper {
     position:relative;
+} */
+
+/* Splash Page */
+
+#splash-page-container-show{
+    height: 100vh;
+    width: 100vw;
+    opacity: 0.9;
+    background-image: url("https://images.squarespace-cdn.com/content/v1/52001f7ce4b0929e453b7ea1/1484271450322-JI8WZD7UXA3NLGTGNEW5/installationdetail1.jpg?format=2500w");
+    background-position: left;
 }
 
 
@@ -35,36 +45,47 @@ a:active {
     color:rgba(248, 215, 0, 0.913);
 }
 
+
 /* Headers */
 
-#headers h1 {
+/* #headers h1 {
     font-family: 'Mrs Sheppards';
-    font-size: 2em;
+    font-size: 5em;
     letter-spacing: .15em;
-}
+} */
 
-#headers {
+/* #headers {
     position: absolute;
     top: 10em;
-}
+} */
 
-/* Circle */
+
+
+/* Navigation */
+
+
+
+/* Circle Background */
 
 #circle {
+
+}
+
+#circle-inside {
     background-image: linear-gradient(rgb(248, 215, 0), rgba(255, 255, 255, 0)); 
-    min-width: 43em;
-    min-height: 43em;
+    min-width: 40em;
+    min-height: 40em;
     display: inline-block;
     border-radius: 50%;
-    margin: 10px 0 0 25px;
+    margin: 0px 0px 0 0px;
     z-index: 1;
 
 }
 
-.border-wrap {
+#circle-border {
   background: linear-gradient(to right, red, rgb(38, 26, 47));
-  min-width: 50em;
-  min-height: 50em;
+  min-width: 40em;
+  min-height: 40em;
   display: inline-block;
   border-radius: 50%;
   position: absolute;
@@ -75,9 +96,3 @@ a:active {
 
 /* Body content */
 
-
-.display-text {
-    position: absolute;
-    left: 700px;
-    z-index: 2;
-}
