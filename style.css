@@ -1,7 +1,7 @@
 /* Global Styles */
 
 body {
-    /* background-color: rgba(15, 15, 54, 0.26); */
+    background-color: rgb(255, 255, 255);
 }
 
 #logo img{
@@ -91,48 +91,50 @@ a:active {
 
 .content-container #nav-container #about {
     position: absolute;
-    top: 10px;
-    left: 200px;
+    top: -20px;
+    left: 400px;
 }
 
 .content-container #nav-container #tarot {
     position: absolute;
-    top: 300px;
-    left: 100px;
-}
-
-.content-container #nav-container #artwork {
-    position: absolute;
-    top: 200px;
-    left: 1060px;
+    top: 100px;
+    left: 150px;
 }
 
 .content-container #nav-container #github {
     position: absolute;
-    top: 550px;
-    left: 1100px;
+    top: 300px;
+    left: 50px;
 }
+
+.content-container #nav-container #artwork {
+    position: absolute;
+    top: 500px;
+    left: 300px;
+}
+
+
 
 
 /* Circle Background */
 
 #circle-show {
     position: fixed;
-    left: 15%;
-    top: 8%;
+    left: 0%;
+    top: -10%;
 }
 
 #circle-inside {
     background-image: linear-gradient(rgb(248, 215, 0), rgba(255, 255, 255, 0)); 
-    min-width: 55em;
-    min-height: 55em;
+    min-width: 150vh;
+    min-height: 120vh;
     border-radius: 50%;
 }
 
 #circle-border {
   background: linear-gradient(to right, red, rgb(38, 26, 47));
-  min-width: 55em;
-  min-height: 55em;
+  min-width: 150vh;
+  min-height: 120vh;
   border-radius: 50%;
 }
 
