@@ -3,11 +3,20 @@
 
 // document.querySelector("body").appendChild(h2);
 
-const about = document.querySelector("#about");
-const aboutText = document.querySelector("h1");
+const aboutStar = document.querySelector("#about .star");
+const showAbout = document.querySelector("#show-about");
 
-about.addEventListener("mouseover", function(){
-    if (aboutText === "✴"){
-        aboutText.innerText = "test";
+
+
+aboutStar.addEventListener("mouseover", function(){
+    if (aboutStar !== "about"){
+        aboutStar.textContent = "about";
+        aboutStar.style.fontSize = "3em";
+        aboutStar.style.letterSpacing = ".15em";
+        aboutStar.style.color = "rgb(248, 83, 0)";
     }
+});
+
+aboutStar.addEventListener("click", function(){
+    showAbout.classList.remove("display");
 })

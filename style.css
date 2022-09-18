@@ -48,12 +48,6 @@ a:active {
 
 /* Headers */
 
-/* #headers h1 {
-    font-family: 'Mrs Sheppards';
-    font-size: 5em;
-    letter-spacing: .15em;
-} */
-
 /* #headers {
     position: absolute;
     top: 10em;
@@ -71,9 +65,16 @@ a:active {
 /* Navigation */
 
 .star {
-    font-size: 5em;
-    font-weight: bold;
+    font-size: 6em;
+    font-weight: 900;
+    font-family: 'Mrs Sheppards';
+    margin: 0;
 }
+
+/* h1 {
+    font-family: 'Mrs Sheppards';
+    letter-spacing: .15em;
+} */
 
 #nav-container {
     position: absolute;
@@ -83,34 +84,34 @@ a:active {
 
 .content-container #nav-container #collapsed-menu {
     position: fixed;
-    top: -30px;
+    top: 10px;
     right: 30px;
     color:deeppink;
     font-size: 0.75em;
 }
 
-.content-container #nav-container #about {
+.content-container #nav-container #about h1 {
     position: absolute;
-    top: -20px;
-    left: 400px;
+    top: 50px;
+    left: 310px;
 }
 
-.content-container #nav-container #tarot {
+.content-container #nav-container #tarot h1 {
     position: absolute;
-    top: 100px;
+    top: 170px;
     left: 150px;
 }
 
-.content-container #nav-container #github {
+.content-container #nav-container #github h1 {
     position: absolute;
-    top: 300px;
+    top: 350px;
     left: 50px;
 }
 
-.content-container #nav-container #artwork {
+.content-container #nav-container #artwork h1 {
     position: absolute;
-    top: 500px;
-    left: 300px;
+    top: 550px;
+    left: 230px;
 }
 
 
@@ -136,5 +137,15 @@ a:active {
   min-width: 150vh;
   min-height: 120vh;
   border-radius: 50%;
+}
+
+/* About */
+
+#show-about {
+    position: absolute;
+    top: 200px;
+    left: 600px;
+    text-align: center;
+    display: none;
 }
 
