@@ -5,7 +5,16 @@
 
 const aboutStar = document.querySelector("#about .star");
 const showAbout = document.querySelector("#show-about");
+const circleInsideColor = document.querySelector(".circle-inside");
+const circleBorderColor = document.querySelector(".circle-border");
 
+
+function circleColorDark (){
+    circleInsideColor.classList.add("circle-inside-dark");
+    circleBorderColor.classList.add("circle-border-dark");
+    circleInsideColor.classList.remove("circle-inside");
+    circleBorderColor.classList.remove("circle-border");
+};
 
 
 aboutStar.addEventListener("mouseover", function(){
@@ -14,9 +23,8 @@ aboutStar.addEventListener("mouseover", function(){
         aboutStar.style.fontSize = "3em";
         aboutStar.style.letterSpacing = ".15em";
         aboutStar.style.color = "rgb(248, 83, 0)";
+        circleColorDark();
     }
 });
 
-aboutStar.addEventListener("click", function(){
-    showAbout.classList.remove("display");
-})
+
