@@ -126,7 +126,7 @@ a:active {
 }
 
 .circle-inside {
-    background-image: linear-gradient(rgb(248, 215, 0), rgba(255, 255, 255, 0)); 
+    background-image: linear-gradient(rgb(248, 194, 0), rgba(255, 255, 255, 0)); 
     min-width: 150vh;
     min-height: 120vh;
     border-radius: 50%;
@@ -140,7 +140,7 @@ a:active {
 }
 
 .circle-inside-dark {
-    background-image: linear-gradient(to left, rgba(12, 3, 51, 0.918), rgba(255, 255, 255, 0)); 
+    background-image: linear-gradient( rgba(12, 3, 51, 0.918), rgba(255, 255, 255, 0)); 
     min-width: 150vh;
     min-height: 120vh;
     border-radius: 50%;
@@ -165,11 +165,12 @@ a:active {
 
 /* About */
 
-#show-about {
+.show-about {
     position: absolute;
     top: 200px;
     left: 600px;
     text-align: center;
+    display: none;
 }
 
 
