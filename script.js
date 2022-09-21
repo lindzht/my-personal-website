@@ -22,16 +22,20 @@ function circleColorDark (){
 };
 
 function navTextChange (title){
-    title.style.color = "rgba(248, 215, 0, 0.913)";
-    title.style.fontSize = "4em";
-    title.style.letterSpacing = ".15em";
+    title.classList.add("show-nav-text");
 }
 
 
 function mouseOut(object){
     object.textContent = "✴";
+    object.classList.add("star");
+    object.classList.remove("show-nav-text");
 }
 
+function starClickColorChange (object){
+    object.classList.add("star-click");
+    object.classList.remove("star");
+}
 
 aboutStar.addEventListener("mouseover", function(){
         aboutStar.textContent = "about"; 
@@ -43,7 +47,7 @@ aboutStar.addEventListener("mouseout", function (){
 });
 
 tarotStar.addEventListener("mouseover", function(){
-    tarotStar.textContent = "tarot card pull"; 
+    tarotStar.textContent = "tarot card"; 
     navTextChange(tarotStar);
 });
 
@@ -67,7 +71,37 @@ ghStar.addEventListener("mouseover", function(){
 
 ghStar.addEventListener("mouseout", function (){
     mouseOut(ghStar);
+    ghStar.classList.add("star");
 });
+
+
+
+aboutStar.addEventListener("click", function(e){
+    if (showAbout.classList.contains !== "show-about"){
+        circleColorDark();
+        showAbout.classList.add("show-about");
+        let header = document.createElement("h2");
+        let p = document.createElement("p");
+        let img = document.createElement("img");
+        header.textContent = "👋 hey i'm lindsay"
+        p.textContent = "artist + engineer in training"
+        img.src = "./images/IMG_0478_png.png"
+        img.style.width = "300px";
+        showAbout.append(img);
+        showAbout.append(header);
+        showAbout.append(p);
+        starClickColorChange(aboutStar);
+        starClickColorChange(tarotStar);
+        starClickColorChange(artStar);
+        starClickColorChange(ghStar);
+    } else if (showAbout.classList.contains === "show-about") {
+        showAbout.classList.remove("show-about");
+    }
+    
+})
+
+
+
 
 
 
@@ -98,15 +132,3 @@ ghStar.addEventListener("mouseout", function (){
 //         navTextChange();    
 //     } 
 // });
-
-
-
-aboutStar.addEventListener("click", function(){
-    circleColorDark();
-    aboutStar.style.color = "rgb(248, 83, 0)";
-})
-
-
-
-
-
