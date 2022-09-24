@@ -95,8 +95,8 @@ a:active {
 
 .content-container #nav-container #about h1 {
     position: absolute;
-    top: 30px;
-    left: 310px;
+    top: 20px;
+    left: 300px;
 }
 
 .content-container #nav-container #tarot h1 {
@@ -114,7 +114,7 @@ a:active {
 .content-container #nav-container #artwork h1 {
     position: absolute;
     top: 540px;
-    left: 210px;
+    left: 200px;
 }
 
 
@@ -136,7 +136,7 @@ a:active {
 }
 
 .circle-border {
-  background: linear-gradient(to right, red, rgb(38, 26, 47));
+  background: linear-gradient(to right, rgb(255, 0, 0), rgb(38, 26, 47));
   min-width: 150vh;
   min-height: 120vh;
   border-radius: 50%;
@@ -161,7 +161,7 @@ a:active {
 
 /* Hide content */
 
-.display-none {
+.hide {
     display: none;
 }
 
@@ -175,6 +175,9 @@ a:active {
     text-align: center;
     color: white;
 }
+
+
+
 
 
 
