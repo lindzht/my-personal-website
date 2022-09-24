@@ -11,10 +11,12 @@ const star = document.querySelectorAll(".star");
 const navigation = document.querySelector("#nav-container");
 const aboutSection = document.querySelector("#about");
 const showAbout = document.querySelector(".show-about");
-const tarotDeck = document.querySelector("#tarot-array");
+const tarotDeck = document.querySelector(".tarot-array");
 const circleInsideColor = document.querySelector(".circle-inside");
 const circleBorderColor = document.querySelector(".circle-border");
-const button = document.querySelector("button");
+
+const img = document.createElement("img");
+const p = document.createElement("p");
 
 
 function circleColorDefault (){
@@ -109,14 +111,63 @@ aboutStar.addEventListener("click", function(){
     )
 })
 
-tarotStar.addEventListener("click", function(e){
-    tarotDeck.textContent = [];
-    let img = document.createElement("img");
-    let p = document.createElement("p");
-})
+
+tarotDeck.textContent = [];
+tarotDeck[0] = img["src"] = "./images/death.png"
+tarotDeck[1] = img["src"] = "./images/devil.png"
+tarotDeck[2] = img["src"] = "./images/emporer.png"
+tarotDeck[3] = img["src"] = "./images/empress.png"
+tarotDeck[4] = img["src"] = "./images/fool.png"
+tarotDeck[5] = img["src"] = "./images/hanged-man.png"
+tarotDeck[6] = img["src"] = "./images/hermit.png"
+tarotDeck[7] = img["src"] = "./images/hierophant.png"
+tarotDeck[8] = img["src"] = "./images/high-priestess.png"
+tarotDeck[9] = img["src"] = "./images/judgement.png"
+tarotDeck[10] = img["src"] = "./images/justice.png"
+tarotDeck[11] = img["src"] = "./images/king-of-pentacles.png"
+tarotDeck[12] = img["src"] = "./images/lovers.png"
+tarotDeck[13] = img["src"] = "./images/magician.png"
+tarotDeck[14] = img["src"] = "./images/moon.png"
+tarotDeck[15] = img["src"] = "./images/star.png"
+tarotDeck[16] = img["src"] = "./images/strength.png"
+tarotDeck[17] = img["src"] = "./images/sun.png"
+tarotDeck[18] = img["src"] = "./images/temperance.png"
+tarotDeck[19] = img["src"] = "./images/tower.png"
+tarotDeck[20] = img["src"] = "./images/wheel-fortune.png"
+tarotDeck[21] = img["src"] = "./images/world.png"
 
 
+const tarotDescription = [];
 
+tarotDescription[0] = "Endings, change, transformation, transition";
+tarotDescription[1] = "Endings, change, transformation, transition";
+tarotDescription[2] = "Endings, change, transformation, transition";
+tarotDescription[3] = "Endings, change, transformation, transition";
+tarotDescription[4] = "Endings, change, transformation, transition";
+tarotDescription[5] = "Endings, change, transformation, transition";
+tarotDescription[6] = "Endings, change, transformation, transition";
+tarotDescription[7] = "Endings, change, transformation, transition";
+tarotDescription[8] = "Endings, change, transformation, transition";
+tarotDescription[9] = "Endings, change, transformation, transition";
+tarotDescription[10] = "Endings, change, transformation, transition";
+tarotDescription[11] = "Endings, change, transformation, transition";
+tarotDescription[12] = "Endings, change, transformation, transition";
+tarotDescription[13] = "Endings, change, transformation, transition";
+tarotDescription[14] = "Endings, change, transformation, transition";
+tarotDescription[15] = "Endings, change, transformation, transition";
+tarotDescription[16] = "Endings, change, transformation, transition";
+tarotDescription[17] = "Endings, change, transformation, transition";
+tarotDescription[18] = "Endings, change, transformation, transition";
+tarotDescription[19] = "Endings, change, transformation, transition";
+tarotDescription[20] = "Endings, change, transformation, transition";
+tarotDescription[21] = "Endings, change, transformation, transition";
+
+
+function randomTarotCard (imagearray, descriptionarray){
+    let imgIndex = Math.floor(Math.random() * imagearray.length);
+    let image = imagearray[imgIndex];
+    let description = descriptionarray[imgIndex];
+}
 
 
 
