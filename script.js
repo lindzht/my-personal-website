@@ -177,11 +177,11 @@ function randomObject (array){
 };
 
 
-tarotStar.addEventListener("click", function(){
-    let object = randomObject(tarotDeckTwo);
-    tarotDeckTwo[object["image"]]
+// tarotStar.addEventListener("click", function(){
+//     let object = randomObject(tarotDeckTwo);
+//     tarotDeckTwo[object["image"]]
 
-})
+// })
 
 
 // tarotStar.addEventListener("click", function(){
@@ -198,20 +198,11 @@ tarotStar.addEventListener("click", function(){
 
 
 
-
-
-
-
 // tarotStar.addEventListener("click", function(){
 //     let image = document.createElement("img");
 //     image.src = tarotDeckTest["image"]
 //     tarotCardDiv.append(image);
 // })
-
-
-
-
-
 
 
 
@@ -221,14 +212,6 @@ tarotStar.addEventListener("click", function(){
 //     console.log(item);
 // }
 
-// function randomTarotCard (imagearray, descriptionarray, array){
-//     let index = Math.floor(Math.random() * imagearray.length);
-//     let image = imagearray[index];
-//     let description = descriptionarray[index];
-//     array.append(image);
-//     array.append(description);
-// }
-
 
 const tarotDeck = [];
 const tarotDescription = [];
@@ -236,6 +219,7 @@ const tarotDescription = [];
 function createImages (){
     for (let i = 0; tarotDeck.length < 22; i++){
         let img = document.createElement("img");
+        img.style.width = "230px";
         tarotDeck.push(img);
     }
 }
@@ -291,9 +275,16 @@ tarotDescription[19] = "Endings, change, transformation, transition";
 tarotDescription[20] = "Endings, change, transformation, transition";
 tarotDescription[21] = "Endings, change, transformation, transition";
 
+function generateRandomIndex (array){
+    let randomIndex = Math.floor(Math.random() * array.length);
+    return randomIndex
+}
 
 tarotStar.addEventListener("click", function(){
-    tarotCardDiv.append(tarotDeck[0]);
+    // tarotCardDiv.append(tarotDeck[0]);
+    let index = generateRandomIndex(tarotDeck);
+    tarotCardDiv.append(tarotDeck[index]);
+    tarotCardDiv.append(tarotDescription[index]);
 })
 
 
