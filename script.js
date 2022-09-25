@@ -11,7 +11,6 @@ const star = document.querySelectorAll(".star");
 const navigation = document.querySelector("#nav-container");
 const aboutSection = document.querySelector("#about");
 const showAbout = document.querySelector(".show-about");
-const tarotCardDiv = document.querySelector(".tarot-card");
 const circleInsideColor = document.querySelector(".circle-inside");
 const circleBorderColor = document.querySelector(".circle-border");
 
@@ -212,7 +211,8 @@ function randomObject (array){
 //     console.log(item);
 // }
 
-
+const tarotCardDivImg = document.querySelector(".tarot-card");
+const tarotCardDivDesc = document.querySelector(".tarot-description");
 const tarotDeck = [];
 const tarotDescription = [];
 
@@ -290,8 +290,8 @@ function generateRandomIndex (array){
 
 tarotStar.addEventListener("click", function(){
     let index = generateRandomIndex(tarotDeck);
-    tarotCardDiv.append(tarotDeck[index]);
-    tarotCardDiv.append(tarotDescription[index]);
+    tarotCardDivImg.append(tarotDeck[index]);
+    tarotCardDivDesc.append(tarotDescription[index]);
 })
 
 

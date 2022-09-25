@@ -178,27 +178,27 @@ a:active {
 
 /* Tarot Card */
 
-.tarot-card {
-    position: absolute;
-    top: 200px;
-    left: 600px;
+.tarot-display {
+    position: relative;
+    top: 150px;
+    left: 580px;
     text-align: center;
-    font-family: 'Mrs Sheppards';
-    font-weight: lighter;
-    font-size: 2em;
-    min-width: 400px;
-    color: black;
+    max-width: 400px;
 }
 
 .tarot-card img{
     background-color:rgba(255, 255, 255, 0.479);
     border: 30px solid rgba(255, 255, 255, 0.266);
-    border-radius: 20%;
+    border-radius: 18%;
 }
 
-text{
-
+.tarot-description {
+    text-align: center;
+    font-family: 'Mrs Sheppards';
+    font-weight: lighter;
+    font-size: 2em;
+    letter-spacing: 0.10em;
+    color: white; 
 }
-
 
 
