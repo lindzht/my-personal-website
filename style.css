@@ -1,13 +1,16 @@
 /* Global Styles */
 
 body {
-    background-color: rgb(255, 255, 255);
+    background-image: linear-gradient(rgb(248, 120, 0), rgb(32, 3, 60)); 
+    background-size: 300vh 120vh;
+    background-repeat: no-repeat;
 }
 
 #logo img{
     width: 20%;
     max-width: 200px;
 }
+
 
 
 /* Splash Page */
@@ -125,34 +128,34 @@ a:active {
 #circle-show {
     position: fixed;
     left: 0%;
-    top: -10%;
+    top: 0%;
 }
 
 .circle-inside {
     background-image: linear-gradient(rgb(248, 194, 0), rgba(255, 255, 255, 0)); 
-    min-width: 150vh;
-    min-height: 120vh;
+    min-width: 120vh;
+    min-height: 100vh;
     border-radius: 50%;
 }
 
 .circle-border {
   background: linear-gradient(to right, rgb(255, 0, 0), rgb(38, 26, 47));
-  min-width: 150vh;
-  min-height: 120vh;
+  min-width: 120vh;
+  min-height: 100vh;
   border-radius: 50%;
 }
 
 .circle-inside-dark {
     background-image: linear-gradient( rgba(12, 3, 51, 0.918), rgba(255, 255, 255, 0)); 
-    min-width: 150vh;
-    min-height: 120vh;
+    min-width: 120vh;
+    min-height: 100vh;
     border-radius: 50%;
 }
 
 .circle-border-dark {
     background-image: linear-gradient( rgb(255, 89, 12), rgba(255, 128, 0, 0.71));
-    min-width: 150vh;
-    min-height: 120vh;
+    min-width: 120vh;
+    min-height: 100vh;
     border-radius: 50%;
 }
 
@@ -171,7 +174,7 @@ a:active {
 .show-about {
     position: absolute;
     top: 200px;
-    left: 600px;
+    left: 530px;
     text-align: center;
     color: white;
 }
@@ -181,7 +184,7 @@ a:active {
 .tarot-display {
     position: relative;
     top: 150px;
-    left: 580px;
+    left: 570px;
     text-align: center;
     max-width: 400px;
 }

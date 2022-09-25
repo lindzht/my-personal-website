@@ -213,6 +213,7 @@ function randomObject (array){
 
 const tarotCardDivImg = document.querySelector(".tarot-card");
 const tarotCardDivDesc = document.querySelector(".tarot-description");
+const tarotDiv = document.querySelector(".tarot-display");
 const tarotDeck = [];
 const tarotDescription = [];
 
@@ -289,9 +290,26 @@ function generateRandomIndex (array){
 }
 
 tarotStar.addEventListener("click", function(){
-    let index = generateRandomIndex(tarotDeck);
-    tarotCardDivImg.append(tarotDeck[index]);
-    tarotCardDivDesc.append(tarotDescription[index]);
+    if (tarotDiv.classList.contains("hide")){
+        showAbout.classList.add("hide"),
+        tarotDiv.classList.remove("hide");
+        starClickColorChange(aboutStar)
+        starClickColorChange(tarotStar)
+        starClickColorChange(artStar)
+        starClickColorChange(ghStar)
+        circleColorDark();
+        let index = generateRandomIndex(tarotDeck);
+        tarotCardDivImg.append(tarotDeck[index]);
+        tarotCardDivDesc.append(tarotDescription[index]);
+    } else {
+        tarotDiv.classList.add("hide"),
+        circleColorDefault(),
+        starClickColorDefault(aboutStar),
+        starClickColorDefault(tarotStar),
+        starClickColorDefault(artStar),
+        starClickColorDefault(ghStar),
+        tarotDiv.innerHTML = "";
+    }
 })
 
 
