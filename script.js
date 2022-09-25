@@ -224,6 +224,14 @@ function createImages (){
     }
 }
 
+function createDescriptions (){
+    for (let i = 0; tarotDescription.length < 22; i++){
+        let p = document.createElement("p");
+        tarotDescription.push(p);
+    }
+}
+
+createDescriptions();
 createImages();
 
 tarotDeck[0].src = "images/death.png"
@@ -281,7 +289,6 @@ function generateRandomIndex (array){
 }
 
 tarotStar.addEventListener("click", function(){
-    // tarotCardDiv.append(tarotDeck[0]);
     let index = generateRandomIndex(tarotDeck);
     tarotCardDiv.append(tarotDeck[index]);
     tarotCardDiv.append(tarotDescription[index]);
