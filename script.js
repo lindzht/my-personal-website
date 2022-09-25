@@ -11,11 +11,11 @@ const star = document.querySelectorAll(".star");
 const navigation = document.querySelector("#nav-container");
 const aboutSection = document.querySelector("#about");
 const showAbout = document.querySelector(".show-about");
-const tarotDeck = document.querySelector(".tarot-array");
+const tarotCardDiv = document.querySelector(".tarot-card");
 const circleInsideColor = document.querySelector(".circle-inside");
 const circleBorderColor = document.querySelector(".circle-border");
 
-const img = document.createElement("img");
+
 const p = document.createElement("p");
 
 
@@ -33,6 +33,7 @@ function circleColorDark (){
     circleInsideColor.classList.remove("circle-inside");
     circleBorderColor.classList.remove("circle-border");
 };
+
 
 function navTextChange (title){
     title.classList.add("show-nav-text");
@@ -54,6 +55,8 @@ function starClickColorDefault (object){
     object.classList.remove("star-click");
     object.classList.add("star");
 }
+
+
 
 aboutStar.addEventListener("mouseover", function(){
         aboutStar.textContent = "about"; 
@@ -112,32 +115,158 @@ aboutStar.addEventListener("click", function(){
 })
 
 
-tarotDeck.textContent = [];
-tarotDeck[0] = img["src"] = "./images/death.png"
-tarotDeck[1] = img["src"] = "./images/devil.png"
-tarotDeck[2] = img["src"] = "./images/emporer.png"
-tarotDeck[3] = img["src"] = "./images/empress.png"
-tarotDeck[4] = img["src"] = "./images/fool.png"
-tarotDeck[5] = img["src"] = "./images/hanged-man.png"
-tarotDeck[6] = img["src"] = "./images/hermit.png"
-tarotDeck[7] = img["src"] = "./images/hierophant.png"
-tarotDeck[8] = img["src"] = "./images/high-priestess.png"
-tarotDeck[9] = img["src"] = "./images/judgement.png"
-tarotDeck[10] = img["src"] = "./images/justice.png"
-tarotDeck[11] = img["src"] = "./images/king-of-pentacles.png"
-tarotDeck[12] = img["src"] = "./images/lovers.png"
-tarotDeck[13] = img["src"] = "./images/magician.png"
-tarotDeck[14] = img["src"] = "./images/moon.png"
-tarotDeck[15] = img["src"] = "./images/star.png"
-tarotDeck[16] = img["src"] = "./images/strength.png"
-tarotDeck[17] = img["src"] = "./images/sun.png"
-tarotDeck[18] = img["src"] = "./images/temperance.png"
-tarotDeck[19] = img["src"] = "./images/tower.png"
-tarotDeck[20] = img["src"] = "./images/wheel-fortune.png"
-tarotDeck[21] = img["src"] = "./images/world.png"
+
+function randomizer (array, index){
+    let randomIndex = Math.floor(Math.random() * array.length);
+    let item = array[index]
+    console.log(item);
+}
 
 
+const image = document.createElement("img");
+
+
+const tarotDeckTwo = {
+    death: {
+        image: "images/death.png",
+        desc: "death",
+    },
+    devil: {
+        image: "images/devil.png",
+        desc: "devil"
+    },
+    test: {
+        image: "images/fool.png",
+        desc: "test"
+    }
+};
+
+
+const arrayKeys = Object.keys(tarotDeckTwo);
+const randomNumber = Math.random();
+const arrayIndex = Math.floor(randomNumber * arrayKeys.length);
+
+let randomKey = arrayKeys[arrayIndex];
+let randomValue = tarotDeckTwo[randomKey];
+
+
+function shallowIterator(target){
+    let keys = Object.keys(array);
+    let randomKey = Math.floor(Math.random() * keys.length);
+    for (const key in target){
+        if (typeof target[key] === "object"){
+            for (const nestedKey in target[key]){
+                console.log(target[key][nestedKey]);
+            }
+        } else {
+            console.log(target[key]);
+        }
+    }
+}
+
+
+for (const key in tarotDeckTwo){
+    console.log(key);
+}
+
+
+function randomObject (array){
+    let keys = Object.keys(array);
+    let randomKey = Math.floor(Math.random() * keys.length);
+    let object = keys[randomKey];
+};
+
+
+tarotStar.addEventListener("click", function(){
+    let object = randomObject(tarotDeckTwo);
+    tarotDeckTwo[object["image"]]
+
+})
+
+
+// tarotStar.addEventListener("click", function(){
+//     let image = document.createElement("img");
+//     image.src = tarotDeckTest["image"]
+//     tarotCardDiv.append(image);
+// })
+
+// const tarotDeckTest = {
+//     image: "images/death.png",
+//     desc: "death",
+// };
+
+
+
+
+
+
+
+
+// tarotStar.addEventListener("click", function(){
+//     let image = document.createElement("img");
+//     image.src = tarotDeckTest["image"]
+//     tarotCardDiv.append(image);
+// })
+
+
+
+
+
+
+
+
+// function randomizer (array){
+//     let index = Math.floor(Math.random() * array.length);
+//     let item = array[index]
+//     console.log(item);
+// }
+
+// function randomTarotCard (imagearray, descriptionarray, array){
+//     let index = Math.floor(Math.random() * imagearray.length);
+//     let image = imagearray[index];
+//     let description = descriptionarray[index];
+//     array.append(image);
+//     array.append(description);
+// }
+
+
+const tarotDeck = [];
 const tarotDescription = [];
+
+function createImages (){
+    for (let i = 0; tarotDeck.length < 22; i++){
+        let img = document.createElement("img");
+        tarotDeck.push(img);
+    }
+}
+
+createImages();
+
+tarotDeck[0].src = "images/death.png"
+tarotDeck[1].src = "./images/devil.png"
+tarotDeck[2].src = "./images/emporer.png"
+tarotDeck[3].src = "./images/empress.png"
+tarotDeck[4].src = "./images/fool.png"
+tarotDeck[5].src = "./images/hanged-man.png"
+tarotDeck[6].src = "./images/hermit.png"
+tarotDeck[7].src = "./images/hierophant.png"
+tarotDeck[8].src = "./images/high-priestess.png"
+tarotDeck[9].src = "./images/judgement.png"
+tarotDeck[10].src = "./images/justice.png"
+tarotDeck[11].src = "./images/king-of-pentacles.png"
+tarotDeck[12].src = "./images/lovers.png"
+tarotDeck[13].src = "./images/magician.png"
+tarotDeck[14].src = "./images/moon.png"
+tarotDeck[15].src = "./images/star.png"
+tarotDeck[16].src = "./images/strength.png"
+tarotDeck[17].src = "./images/sun.png"
+tarotDeck[18].src = "./images/temperance.png"
+tarotDeck[19].src = "./images/tower.png"
+tarotDeck[20].src = "./images/wheel-fortune.png"
+tarotDeck[21].src = "./images/world.png"
+// tarotDeck[22] = img;
+// tarotDeck[22].src = 'images/death.png';
+
 
 tarotDescription[0] = "Endings, change, transformation, transition";
 tarotDescription[1] = "Endings, change, transformation, transition";
@@ -163,11 +292,43 @@ tarotDescription[20] = "Endings, change, transformation, transition";
 tarotDescription[21] = "Endings, change, transformation, transition";
 
 
-function randomTarotCard (imagearray, descriptionarray){
-    let imgIndex = Math.floor(Math.random() * imagearray.length);
-    let image = imagearray[imgIndex];
-    let description = descriptionarray[imgIndex];
-}
+tarotStar.addEventListener("click", function(){
+    tarotCardDiv.append(tarotDeck[0]);
+})
+
+
+
+// tarotDeck[0] = img["src"] = "./images/death.png"
+// tarotDeck[1] = img["src"] = "./images/devil.png"
+// tarotDeck[2] = img["src"] = "./images/emporer.png"
+// tarotDeck[3] = img["src"] = "./images/empress.png"
+// tarotDeck[4] = img["src"] = "./images/fool.png"
+// tarotDeck[5] = img["src"] = "./images/hanged-man.png"
+// tarotDeck[6] = img["src"] = "./images/hermit.png"
+// tarotDeck[7] = img["src"] = "./images/hierophant.png"
+// tarotDeck[8] = img["src"] = "./images/high-priestess.png"
+// tarotDeck[9] = img["src"] = "./images/judgement.png"
+// tarotDeck[10] = img["src"] = "./images/justice.png"
+// tarotDeck[11] = img["src"] = "./images/king-of-pentacles.png"
+// tarotDeck[12] = img["src"] = "./images/lovers.png"
+// tarotDeck[13] = img["src"] = "./images/magician.png"
+// tarotDeck[14] = img["src"] = "./images/moon.png"
+// tarotDeck[15] = img["src"] = "./images/star.png"
+// tarotDeck[16] = img["src"] = "./images/strength.png"
+// tarotDeck[17] = img["src"] = "./images/sun.png"
+// tarotDeck[18] = img["src"] = "./images/temperance.png"
+// tarotDeck[19] = img["src"] = "./images/tower.png"
+// tarotDeck[20] = img["src"] = "./images/wheel-fortune.png"
+// tarotDeck[21] = img["src"] = "./images/world.png"
+// tarotDeck[22] = img;
+// tarotDeck[22].src = 'images/death.png';
+
+// tarotStar.addEventListener("click", function(){
+//  if (tarotCardDiv.classList.contains("hide")){
+//     tarotCardDiv.classList.remove("hide");
+//     randomTarotCard(tarotDeck, tarotDescription, tarotCardDiv)
+//  }
+// });
 
 
 
