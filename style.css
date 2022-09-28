@@ -1,15 +1,22 @@
 /* Global Styles */
 
-body {
+/* body {
     background-image: linear-gradient(rgb(248, 120, 0), rgb(32, 3, 60)); 
     background-size: 300vh 120vh;
     background-repeat: no-repeat;
+} */
+
+body {
+    background-image: url(./images/light-1.png);
+    background-position-y: top;
+    background-size:cover;
 }
 
 #logo img{
     width: 20%;
     max-width: 200px;
 }
+
 
 
 
@@ -50,7 +57,10 @@ a:active {
 /* Body */
 
 .content-container {
-    position: relative;
+    /* position: relative; */
+    display: flex;
+    align-items: center;
+    justify-content: center;    
 }
 
 
@@ -61,7 +71,7 @@ a:active {
     font-weight: 900;
     font-family: 'Mrs Sheppards';
     margin: 0;
-    color: black;
+    color: rgba(248, 215, 0, 0.913);
 }
 
 .star-click {
@@ -76,7 +86,7 @@ a:active {
     font-family: 'Mrs Sheppards';
     letter-spacing: .15em;
     font-size: 4em;
-    color: rgba(248, 215, 0, 0.913);
+    color: rgba(255, 255, 255, 0.913);
     min-width: 700px;
     margin: 0px;
     font-weight: 100;
@@ -86,7 +96,14 @@ a:active {
 #nav-container {
     position: absolute;
     z-index: 2;
+    width: 20%;
+    /* position: relative;
+    z-index: 2;
+    width: 100%; 
     max-width: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: center; */
 }
 
 .content-container #nav-container #razzle-dazzle {
@@ -98,25 +115,26 @@ a:active {
 
 .content-container #nav-container #about h1 {
     position: absolute;
-    top: 20px;
-    left: 300px;
+    top: -400px;
+    left: 350px;
 }
 
 .content-container #nav-container #tarot h1 {
     position: absolute;
-    top: 190px;
-    left: 150px;
+    top: 330px;
+    left: 300px;
 }
+
 
 .content-container #nav-container #github h1 {
     position: absolute;
-    top: 360px;
-    left: 50px;
+    top: 470px;
+    left: 170px;
 }
 
 .content-container #nav-container #artwork h1 {
     position: absolute;
-    top: 540px;
+    top: 640px;
     left: 200px;
 }
 
@@ -126,12 +144,43 @@ a:active {
 /* Circle Background */
 
 #circle-show {
-    position: fixed;
+    /* position: fixed;
     left: 0%;
-    top: 0%;
+    top: 0%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .circle-inside {
+    background-image: url(./images/dark-1.png);
+    opacity: 0.65;
+    min-width: 140vh;
+    min-height: 90vh;
+    border-radius: 50%;
+}
+
+.circle-border {
+    min-width: 120vh;
+    min-height: 100vh;
+    border-radius: 50%;
+}
+
+.circle-inside-dark{
+    min-width: 110vh;
+    min-height: 90vh;
+    border-radius: 50%;
+
+}
+
+.circle-border-dark {
+    min-width: 120vh;
+    min-height: 100vh;
+    border-radius: 50%;
+
+}
+
+/* .circle-inside {
     background-image: linear-gradient(rgb(248, 194, 0), rgba(255, 255, 255, 0)); 
     min-width: 120vh;
     min-height: 100vh;
@@ -157,7 +206,7 @@ a:active {
     min-width: 120vh;
     min-height: 100vh;
     border-radius: 50%;
-}
+} */
 
 
 

@@ -14,8 +14,8 @@ const showAbout = document.querySelector(".show-about");
 const circleInsideColor = document.querySelector(".circle-inside");
 const circleBorderColor = document.querySelector(".circle-border");
 
+const body = document.querySelector(".dark");
 
-const p = document.createElement("p");
 
 
 function circleColorDefault (){
@@ -54,6 +54,11 @@ function starClickColorDefault (object){
     object.classList.remove("star-click");
     object.classList.add("star");
 }
+
+document.addEventListener("onload", function(e){
+    console.log(e);
+})
+
 
 
 
