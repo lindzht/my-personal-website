@@ -63,39 +63,48 @@ function starClickColorDefault (object){
     object.classList.add("star");
 }
 
-
+function cursorChange (object){
+    object.style.cursor = "cell";
+}
 
 
 aboutStar.addEventListener("mouseover", function(){
         aboutStar.textContent = "about"; 
         navTextChange(aboutStar);
-});
-
-aboutStar.addEventListener("mouseout", function (){
-    mouseOut(aboutStar);
+        cursorChange(aboutStar);
 });
 
 tarotStar.addEventListener("mouseover", function(){
     tarotStar.textContent = "tarot card"; 
     navTextChange(tarotStar);
+    cursorChange(tarotStar);
+});
+
+artStar.addEventListener("mouseover", function(){
+    artStar.textContent = "artwork"; 
+    navTextChange(artStar);
+    cursorChange(artStar);
+});
+
+ghStar.addEventListener("mouseover", function(){
+    ghStar.textContent = "github";
+    navTextChange(ghStar); 
+    cursorChange(ghStar);
+});
+
+
+
+
+aboutStar.addEventListener("mouseout", function (){
+    mouseOut(aboutStar);
 });
 
 tarotStar.addEventListener("mouseout", function (){
     mouseOut(tarotStar);
 });
 
-artStar.addEventListener("mouseover", function(){
-    artStar.textContent = "artwork"; 
-    navTextChange(artStar);
-});
-
 artStar.addEventListener("mouseout", function (){
     mouseOut(artStar);
-});
-
-ghStar.addEventListener("mouseover", function(){
-    ghStar.textContent = "github";
-    navTextChange(ghStar); 
 });
 
 ghStar.addEventListener("mouseout", function (){
