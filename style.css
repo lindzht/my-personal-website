@@ -10,6 +10,7 @@ body {
     background-image: url(./images/light-1.png);
     background-position-y: top;
     background-size: cover;
+    font-family: 'Josefin Sans';
 }
 
 header {
@@ -83,26 +84,21 @@ a:active {
 .star {
     font-size: 6em;
     font-weight: 900;
-    font-family: 'Mrs Sheppards';
-    margin: 0px;
+    margin: 0;
     color: rgb(248, 215, 0);
 }
 
 .star-click {
     font-size: 6em;
     font-weight: 900;
-    font-family: 'Mrs Sheppards';
     margin: 0;
     color:rgb(255, 107, 2)
 }
 
 .show-nav-text {
-    font-family: 'Mrs Sheppards';
-    letter-spacing: .15em;
-    font-size: 3em;
+    font-size: 2.5em;
     color: rgb(248, 215, 0);
-    min-width: 700px;
-    margin: 0px;
+    margin: 0;
 }
 
 .content-container #nav-container #razzle-dazzle {
@@ -114,7 +110,7 @@ a:active {
 
 .content-container #nav-container #about h1 {
     position: fixed;
-    top: 30px;
+    top: 40px;
     left: 380px;
 }
 
@@ -236,24 +232,28 @@ a:active {
 /* Tarot Card */
 
 .tarot-display {
-    position: relative;
+    /* position: relative;
     top: 150px;
     left: 10px;
     text-align: center;
-    max-width: 300px;
+    max-width: 300px; */
+    display: flex;
+    align-items:flex-start;
+    justify-content: left;
+    max-width: 400px;
+
 }
 
 .tarot-card img{
     background-color:rgba(255, 255, 255, 0.479);
-    border: 10px solid rgba(255, 255, 255, 0.266);
+    border: 8px solid rgba(248, 215, 0, 0.53);
     border-radius: 18%;
 }
 
 .tarot-description {
     text-align: center;
-    font-family: 'Mrs Sheppards';
     font-weight: lighter;
-    font-size: 2em;
+    font-size: 1.5em;
     letter-spacing: 0.10em;
     color: black; 
 }
