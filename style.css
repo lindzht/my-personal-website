@@ -12,6 +12,17 @@ body {
     background-size: cover;
 }
 
+header {
+    font-size: 1.6em;
+    font-weight: 900;
+    font-family: 'Mrs Sheppards';
+    letter-spacing: 0.2em;
+    color: white;
+    position: fixed;
+    bottom: 0px;
+    left: 50px;
+
+}
 
 
 #logo img{
@@ -73,7 +84,7 @@ a:active {
     font-size: 6em;
     font-weight: 900;
     font-family: 'Mrs Sheppards';
-    margin: 0;
+    margin: 0px;
     color: rgb(248, 215, 0);
 }
 
@@ -88,11 +99,10 @@ a:active {
 .show-nav-text {
     font-family: 'Mrs Sheppards';
     letter-spacing: .15em;
-    font-size: 3.5em;
-    color: rgba(255, 255, 255, 0.913);
+    font-size: 3em;
+    color: rgb(248, 215, 0);
     min-width: 700px;
     margin: 0px;
-    font-weight: 100;
 }
 
 .content-container #nav-container #razzle-dazzle {
@@ -104,8 +114,8 @@ a:active {
 
 .content-container #nav-container #about h1 {
     position: fixed;
-    top: 50px;
-    left: 400px;
+    top: 30px;
+    left: 380px;
 }
 
 .content-container #nav-container #tarot h1 {
@@ -117,13 +127,13 @@ a:active {
 
 .content-container #nav-container #github h1 {
     position: fixed;
-    top: 260px;
+    top: 230px;
     left: 70px;
 }
 
 .content-container #nav-container #artwork h1 {
     position: fixed;
-    top: 380px;
+    top: 370px;
     left: 170px;
 }
 
@@ -215,14 +225,12 @@ a:active {
 
 .show-about {
     position: absolute;
-    top: 280px;
-    left: 500px;
+    top: 250px;
+    left: 600px;
     text-align: center;
-    color: black;
-    font-family: 'Mrs Sheppards';
-    font-weight: lighter;
-    font-size: 2em;
-        letter-spacing: 0.10em;
+    color: rgb(255, 255, 255);
+    font-size: 1.5em;
+    letter-spacing: 0.10em;
 }
 
 /* Tarot Card */
