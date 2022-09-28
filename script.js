@@ -68,6 +68,7 @@ function cursorChange (object){
 }
 
 
+
 aboutStar.addEventListener("mouseover", function(){
         aboutStar.textContent = "about"; 
         navTextChange(aboutStar);
@@ -113,87 +114,70 @@ ghStar.addEventListener("mouseout", function (){
 });
 
 
-aboutStar.addEventListener("click", function(){
-    if (showAbout.classList.contains("hide")){
-        showAbout.classList.remove("hide");
-        circleColorDark();
-        backgroundDark();
-        starClickColorChange(aboutStar)
-        starClickColorChange(tarotStar)
-        starClickColorChange(artStar)
-        starClickColorChange(ghStar)
-    } else (
-        showAbout.classList.add("hide"),
-        circleColorDefault(),
-        backgroundLight(),
-        starClickColorDefault(aboutStar),
-        starClickColorDefault(tarotStar),
-        starClickColorDefault(artStar),
-        starClickColorDefault(ghStar)
-    )
-})
 
 
 
-function randomizer (array, index){
-    let randomIndex = Math.floor(Math.random() * array.length);
-    let item = array[index]
-    console.log(item);
-}
 
 
-const image = document.createElement("img");
+// function randomizer (array, index){
+//     let randomIndex = Math.floor(Math.random() * array.length);
+//     let item = array[index]
+//     console.log(item);
+// }
 
 
-const tarotDeckTwo = {
-    death: {
-        image: "images/death.png",
-        desc: "death",
-    },
-    devil: {
-        image: "images/devil.png",
-        desc: "devil"
-    },
-    test: {
-        image: "images/fool.png",
-        desc: "test"
-    }
-};
+// const image = document.createElement("img");
 
 
-const arrayKeys = Object.keys(tarotDeckTwo);
-const randomNumber = Math.random();
-const arrayIndex = Math.floor(randomNumber * arrayKeys.length);
-
-let randomKey = arrayKeys[arrayIndex];
-let randomValue = tarotDeckTwo[randomKey];
-
-
-function shallowIterator(target){
-    let keys = Object.keys(array);
-    let randomKey = Math.floor(Math.random() * keys.length);
-    for (const key in target){
-        if (typeof target[key] === "object"){
-            for (const nestedKey in target[key]){
-                console.log(target[key][nestedKey]);
-            }
-        } else {
-            console.log(target[key]);
-        }
-    }
-}
+// const tarotDeckTwo = {
+//     death: {
+//         image: "images/death.png",
+//         desc: "death",
+//     },
+//     devil: {
+//         image: "images/devil.png",
+//         desc: "devil"
+//     },
+//     test: {
+//         image: "images/fool.png",
+//         desc: "test"
+//     }
+// };
 
 
-for (const key in tarotDeckTwo){
-    console.log(key);
-}
+// const arrayKeys = Object.keys(tarotDeckTwo);
+// const randomNumber = Math.random();
+// const arrayIndex = Math.floor(randomNumber * arrayKeys.length);
+
+// let randomKey = arrayKeys[arrayIndex];
+// let randomValue = tarotDeckTwo[randomKey];
 
 
-function randomObject (array){
-    let keys = Object.keys(array);
-    let randomKey = Math.floor(Math.random() * keys.length);
-    let object = keys[randomKey];
-};
+// function shallowIterator(target){
+//     let keys = Object.keys(array);
+//     let randomKey = Math.floor(Math.random() * keys.length);
+//     for (const key in target){
+//         if (typeof target[key] === "object"){
+//             for (const nestedKey in target[key]){
+//                 console.log(target[key][nestedKey]);
+//             }
+//         } else {
+//             console.log(target[key]);
+//         }
+//     }
+// }
+
+
+// for (const key in tarotDeckTwo){
+//     console.log(key);
+// }
+
+
+// function randomObject (array){
+//     let keys = Object.keys(array);
+//     let randomKey = Math.floor(Math.random() * keys.length);
+//     let object = keys[randomKey];
+// };
 
 
 // tarotStar.addEventListener("click", function(){
@@ -230,6 +214,27 @@ function randomObject (array){
 //     let item = array[index]
 //     console.log(item);
 // }
+
+
+
+aboutStar.addEventListener("click", function(){
+    if (showAbout.classList.contains("hide")){
+        showAbout.classList.remove("hide");
+        circleColorDark();
+        starClickColorChange(aboutStar)
+        starClickColorChange(tarotStar)
+        starClickColorChange(artStar)
+        starClickColorChange(ghStar)
+    } else (
+        showAbout.classList.add("hide"),
+        circleColorDefault(),
+        starClickColorDefault(aboutStar),
+        starClickColorDefault(tarotStar),
+        starClickColorDefault(artStar),
+        starClickColorDefault(ghStar)
+    )
+})
+
 
 const tarotCardDivImg = document.querySelector(".tarot-card");
 const tarotCardDivDesc = document.querySelector(".tarot-description");

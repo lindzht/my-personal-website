@@ -14,23 +14,23 @@ body {
 }
 
 header {
-    font-size: 1.8em;
+    font-size: 2em;
     font-weight: 900;
     font-family: 'Mrs Sheppards';
     letter-spacing: 0.3em;
     color: white;
     position: fixed;
-    bottom: 0px;
-    left: 50px;
+    bottom: 150px;
+    left: -170px;
+    rotate: 90deg;
 
 }
 
+/* Hide content */
 
-#logo img{
-    width: 20%;
-    max-width: 200px;
+.hide {
+    display: none;
 }
-
 
 
 
@@ -111,21 +111,21 @@ a:active {
 
 .content-container #nav-container #about h1 {
     position: fixed;
-    top: 40px;
+    top: 50px;
     left: 380px;
 }
 
 .content-container #nav-container #tarot h1 {
     position: fixed;
-    top: 130px;
-    left: 200px;
+    top: 100px;
+    left: 180px;
 }
 
 
 .content-container #nav-container #github h1 {
     position: fixed;
     top: 230px;
-    left: 70px;
+    left: 300px;
 }
 
 .content-container #nav-container #artwork h1 {
@@ -136,12 +136,11 @@ a:active {
 
 
 
-
 /* Circle Background */
 
 #circle-show {
     position: fixed;
-    left: 40%;
+    left: 35%;
     top: -10%;
 
     /* display: flex;
@@ -167,10 +166,12 @@ a:active {
 .circle-inside-dark{
     background-image: url(./images/light-3.png);
     background-position: center;
-    opacity: 0.65;
+    opacity: 0.75;
     min-width: 150vh;
     min-height: 150vh;
     border-radius: 50%;
+    background-color:rgba(255, 115, 0, 0.493);
+    background-blend-mode: overlay;
 
 }
 
@@ -211,24 +212,40 @@ a:active {
 
 
 
-
-/* Hide content */
-
-.hide {
-    display: none;
-}
-
-
 /* About */
 
+
 .show-about {
-    position: absolute;
+    position: relative;
     top: 250px;
-    left: 600px;
+    left: 90px;
+    color: black;
+}
+
+.show-about h2 {
+    font-size: 2.5em;
+    margin: 10px 0 0 0;
+    width: 500px;
+}
+
+.show-about h2 span {
+    font-family: 'Mrs Sheppards';
+    letter-spacing: 0.15em;
+}
+
+.show-about p em {
     text-align: center;
-    color: rgb(255, 255, 255);
-    font-size: 1.5em;
-    letter-spacing: 0.10em;
+    font-size: 1.3em;
+    margin: 5px 0 0 0;
+}
+
+.show-about #bio {
+    position: absolute;
+    top: 10px;
+    left: 330px;
+    width: 330px;
+    text-align: left;
+    font-size: 1.2em;
 }
 
 /* Tarot Card */
