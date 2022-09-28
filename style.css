@@ -12,6 +12,8 @@ body {
     background-size: cover;
 }
 
+
+
 #logo img{
     width: 20%;
     max-width: 200px;
@@ -80,13 +82,13 @@ a:active {
     font-weight: 900;
     font-family: 'Mrs Sheppards';
     margin: 0;
-    color:rgba(255, 141, 2, 0.913)
+    color:rgb(255, 107, 2)
 }
 
 .show-nav-text {
     font-family: 'Mrs Sheppards';
     letter-spacing: .15em;
-    font-size: 4em;
+    font-size: 3.5em;
     color: rgba(255, 255, 255, 0.913);
     min-width: 700px;
     margin: 0px;
@@ -132,8 +134,8 @@ a:active {
 
 #circle-show {
     position: fixed;
-    left: 10%;
-    top: 0%;
+    left: 30%;
+    top: -10%;
     /* display: flex;
     align-items: center;
     justify-content: center; */
@@ -143,27 +145,30 @@ a:active {
 .circle-inside {
     background-image: url(./images/stars.jpg);
     opacity: 0.65;
-    min-width: 110vh;
-    min-height: 100vh;
+    min-width: 150vh;
+    min-height: 150vh;
     border-radius: 50%;
 }
 
 .circle-border {
     min-width: 110vh;
-    min-height: 100vh;
+    min-height: 110vh;
     border-radius: 50%;
 }
 
 .circle-inside-dark{
+    background-image: url(./images/light-3.png);
+    background-position: center;
+    opacity: 0.85;
     min-width: 110vh;
-    min-height: 100vh;
+    min-height: 110vh;
     border-radius: 50%;
 
 }
 
 .circle-border-dark {
     min-width: 110vh;
-    min-height: 100vh;
+    min-height: 110vh;
     border-radius: 50%;
 
 }
@@ -211,9 +216,13 @@ a:active {
 .show-about {
     position: absolute;
     top: 280px;
-    left: 530px;
+    left: 500px;
     text-align: center;
-    color: white;
+    color: black;
+    font-family: 'Mrs Sheppards';
+    font-weight: lighter;
+    font-size: 2em;
+        letter-spacing: 0.10em;
 }
 
 /* Tarot Card */
@@ -221,14 +230,14 @@ a:active {
 .tarot-display {
     position: relative;
     top: 150px;
-    left: 570px;
+    left: 10px;
     text-align: center;
-    max-width: 400px;
+    max-width: 300px;
 }
 
 .tarot-card img{
     background-color:rgba(255, 255, 255, 0.479);
-    border: 30px solid rgba(255, 255, 255, 0.266);
+    border: 10px solid rgba(255, 255, 255, 0.266);
     border-radius: 18%;
 }
 
@@ -238,7 +247,7 @@ a:active {
     font-weight: lighter;
     font-size: 2em;
     letter-spacing: 0.10em;
-    color: white; 
+    color: black; 
 }
 
 

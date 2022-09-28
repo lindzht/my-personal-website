@@ -14,7 +14,7 @@ const showAbout = document.querySelector(".show-about");
 const circleInsideColor = document.querySelector(".circle-inside");
 const circleBorderColor = document.querySelector(".circle-border");
 
-const body = document.querySelector(".dark");
+const body = document.querySelector("body");
 
 
 
@@ -32,6 +32,14 @@ function circleColorDark (){
     circleInsideColor.classList.remove("circle-inside");
     circleBorderColor.classList.remove("circle-border");
 };
+
+function backgroundDark (){
+    body.style.backgroundImage = "url('images/dark-3.png')";
+}
+
+function backgroundLight (){
+    body.style.backgroundImage = "url('images/light-1.png')";
+}
 
 
 function navTextChange (title){
@@ -54,10 +62,6 @@ function starClickColorDefault (object){
     object.classList.remove("star-click");
     object.classList.add("star");
 }
-
-document.addEventListener("onload", function(e){
-    console.log(e);
-})
 
 
 
@@ -111,6 +115,7 @@ aboutStar.addEventListener("click", function(){
     } else (
         showAbout.classList.add("hide"),
         circleColorDefault(),
+        backgroundLight(),
         starClickColorDefault(aboutStar),
         starClickColorDefault(tarotStar),
         starClickColorDefault(artStar),
@@ -313,7 +318,7 @@ tarotStar.addEventListener("click", function(){
         starClickColorDefault(tarotStar),
         starClickColorDefault(artStar),
         starClickColorDefault(ghStar),
-        tarotDiv.innerHTML = "";
+        tarotDiv.textContent = " ";
     }
 })
 
