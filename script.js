@@ -34,7 +34,7 @@ function circleColorDark (){
 };
 
 function backgroundDark (){
-    body.style.backgroundImage = "url('images/dark-3.png')";
+    body.style.backgroundImage = "url('images/stars.jpg')";
 }
 
 function backgroundLight (){
@@ -108,6 +108,7 @@ aboutStar.addEventListener("click", function(){
     if (showAbout.classList.contains("hide")){
         showAbout.classList.remove("hide");
         circleColorDark();
+        backgroundDark();
         starClickColorChange(aboutStar)
         starClickColorChange(tarotStar)
         starClickColorChange(artStar)
