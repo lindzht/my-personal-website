@@ -9,7 +9,7 @@
 body {
     background-image: url(./images/light-1.png);
     background-position-y: top;
-    background-size:cover;
+    background-size: cover;
 }
 
 #logo img{
@@ -92,20 +92,6 @@ a:active {
     font-weight: 100;
 }
 
-
-#nav-container {
-    position: absolute;
-    z-index: 2;
-    width: 20%;
-    /* position: relative;
-    z-index: 2;
-    width: 100%; 
-    max-width: 900px;
-    display: flex;
-    align-items: center;
-    justify-content: center; */
-}
-
 .content-container #nav-container #razzle-dazzle {
     position: fixed;
     top: 10px;
@@ -114,28 +100,28 @@ a:active {
 }
 
 .content-container #nav-container #about h1 {
-    position: absolute;
-    top: -400px;
-    left: 350px;
+    position: fixed;
+    top: 150px;
+    left: 450px;
 }
 
 .content-container #nav-container #tarot h1 {
-    position: absolute;
-    top: 330px;
-    left: 300px;
+    position: fixed;
+    top: 280px;
+    left: 280px;
 }
 
 
 .content-container #nav-container #github h1 {
-    position: absolute;
+    position: fixed;
     top: 470px;
-    left: 170px;
+    left: 150px;
 }
 
 .content-container #nav-container #artwork h1 {
-    position: absolute;
+    position: fixed;
     top: 640px;
-    left: 200px;
+    left: 300px;
 }
 
 
