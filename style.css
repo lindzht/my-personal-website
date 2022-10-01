@@ -16,12 +16,12 @@ body {
 header {
     font-size: 2em;
     font-weight: 900;
-    font-family: 'Mrs Sheppards';
+    font-family: 'Yellowtail';
     letter-spacing: 0.3em;
     color: white;
     position: fixed;
-    bottom: 150px;
-    left: -170px;
+    bottom: 170px;
+    left: -160px;
     rotate: 90deg;
 
 }
@@ -112,20 +112,20 @@ a:active {
 .content-container #nav-container #about h1 {
     position: fixed;
     top: 50px;
-    left: 380px;
+    left: 480px;
 }
 
 .content-container #nav-container #tarot h1 {
     position: fixed;
-    top: 100px;
-    left: 180px;
+    top: 150px;
+    left: 150px;
 }
 
 
 .content-container #nav-container #github h1 {
     position: fixed;
     top: 230px;
-    left: 300px;
+    left: 370px;
 }
 
 .content-container #nav-container #artwork h1 {
