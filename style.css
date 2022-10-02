@@ -8,12 +8,12 @@ body {
 }
 
 header {
-    font-size: 4.7em;
+    font-size: 4.5em;
     font-family: 'Yellowtail';
     letter-spacing: -0.2px;
     color: rgb(190, 224, 255);
     position: fixed;
-    top: 138px;
+    top: 132px;
     left: -260px;
     rotate: 90deg;
     z-index: 3;
@@ -109,14 +109,14 @@ a:active {
 .content-container #nav-container #about h1 {
     position: fixed;
     top: 50px;
-    left: 650px;
+    left: 580px;
     z-index: 3;
 }
 
 .content-container #nav-container #tarot h1 {
     position: fixed;
     top: 130px;
-    left: 330px;
+    left: 280px;
     z-index: 3;
 }
 
@@ -124,7 +124,7 @@ a:active {
 .content-container #nav-container #github h1 {
     position: fixed;
     top: 230px;
-    left: 500px;
+    left: 450px;
     z-index: 3;
 
 }
@@ -132,7 +132,7 @@ a:active {
 .content-container #nav-container #artwork h1 {
     position: fixed;
     top: 370px;
-    left: 280px;
+    left: 200px;
     z-index: 3;
 }
 
@@ -183,7 +183,7 @@ video {
 
 .show-about {
     position: relative;
-    top: 300px;
+    top: 250px;
     left: 150px;
 }
 
@@ -245,7 +245,7 @@ video {
     position: relative;
     max-width: 900px;
     left: 20px;
-    top: 20px;
+    top: 5px;
 
 }
 
