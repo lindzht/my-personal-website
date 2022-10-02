@@ -130,6 +130,7 @@ razzleStar.addEventListener("click", function(){
         starClickColorDefault(ghStar),
         showAbout.classList.add("hide"),
         tarotDiv.classList.add("hide");
+        resetTarotDivToEmpty();
     } else {
         razzleStarDiv.classList.add("hide");
         removeRazzleStar();
@@ -151,6 +152,7 @@ aboutStar.addEventListener("click", function(){
         tarotDiv.classList.add("hide"),
         removeRazzleStar();
         circleColorDark();
+        resetTarotDivToEmpty();
         starClickColorChange(aboutStar)
         starClickColorChange(tarotStar)
         starClickColorChange(artStar)
@@ -249,6 +251,11 @@ function generateRandomIndex (array){
     return randomIndex
 }
 
+function resetTarotDivToEmpty (){
+    let index = generateRandomIndex(tarotDeck);
+    tarotCardDivImg.textContent = "";
+    tarotCardDivDesc.textContent = "";
+}
 
 tarotStar.addEventListener("click", function(){
     if (tarotDiv.classList.contains("hide")){
@@ -270,9 +277,7 @@ tarotStar.addEventListener("click", function(){
         starClickColorDefault(tarotStar),
         starClickColorDefault(artStar),
         starClickColorDefault(ghStar);
-        let index = generateRandomIndex(tarotDeck);
-        tarotCardDivImg.textContent = "";
-        tarotCardDivDesc.textContent = "";
+        resetTarotDivToEmpty();
     }
 });
 

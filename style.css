@@ -13,7 +13,7 @@ header {
     letter-spacing: -0.2px;
     color: rgb(190, 224, 255);
     position: fixed;
-    top: 150px;
+    top: 138px;
     left: -260px;
     rotate: 90deg;
     z-index: 3;
@@ -190,16 +190,15 @@ video {
     position: absolute;
     top: 0px;
     left: 330px;
-    width: 500px;
+    width: 400px;
     text-align: left;
     color: black;
 }
 
 .show-about h2 {
     font-size: 3.5em;
-    margin: 10px;
+    margin: 5px 0 -10px 0;
     width: 500px;
-    font-style: italic;
 }
 
 .show-about h2 span {
@@ -207,18 +206,24 @@ video {
     letter-spacing: -0.2px;
 }
 
-.show-about p em {
+.show-about #bio p em {
     font-size: 1.6em;
 }
 
-.show-about #bio-list p em{
-    margin: 30px 0 20px 0;
-    line-height: 8px;
+.show-about #bio-list ul {
+    margin: 0 0 30px 0;
+}
+
+.show-about #bio-list ul li {
+    margin: 25px 0 10px -40px;
+    line-height: 3px;
     font-size: 1.2em;
+    list-style: none;
 }
 
 .show-about a {
-    font-size: 2.3em;
+    color: rgb(255, 82, 2);
+    font-size: 1.6em;
 }
 
 
@@ -231,21 +236,21 @@ video {
 }
 
 .tarot-card img{
-    border: 8px solid rgba(248, 215, 0, 0.381);
+    border: 8px solid rgba(233, 208, 187, 0.685);
     border-radius: 18%;
     position: absolute;
     top: 250px;
-    left: 100px;
+    left: 130px;
 }
 
 .tarot-description {
     text-align: left;
     line-height: 1.3em;
-    font-size: 1.5em;
+    font-size: 1.8em;
     color: black; 
     position: absolute;
     top: 350px;
-    left: 390px;
+    left: 398px;
     font-style: italic;
     text-transform: lowercase;
     width: 200px;
