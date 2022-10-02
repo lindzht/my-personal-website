@@ -234,14 +234,22 @@ video {
 
 .show-about {
     position: relative;
-    top: 250px;
-    left: 120px;
+    top: 300px;
+    left: 150px;
+}
+
+.show-about #bio {
+    position: absolute;
+    top: 0px;
+    left: 330px;
+    width: 500px;
+    text-align: left;
     color: black;
 }
 
 .show-about h2 {
-    font-size: 2.5em;
-    margin: 10px 0 0 0;
+    font-size: 3.5em;
+    margin: 10px;
     width: 500px;
     font-style: italic;
 }
@@ -252,18 +260,17 @@ video {
 }
 
 .show-about p em {
-    text-align: center;
-    font-size: 1.3em;
-    margin: 5px 0 0 0;
+    font-size: 1.6em;
 }
 
-.show-about #bio {
-    position: absolute;
-    top: 10px;
-    left: 360px;
-    width: 330px;
-    text-align: left;
+.show-about #bio-list p em{
+    margin: 30px 0 20px 0;
+    line-height: 8px;
     font-size: 1.2em;
+}
+
+.show-about a {
+    font-size: 2.3em;
 }
 
 /* Tarot Card */
@@ -278,7 +285,7 @@ video {
     align-items:flex-start;
     justify-content: left; */
     position: relative;
-    max-width: 600px;
+    max-width: 700px;
 
 }
 
@@ -287,7 +294,7 @@ video {
     border-radius: 18%;
     position: absolute;
     top: 250px;
-    left: 50px;
+    left: 100px;
 }
 
 .tarot-description {
@@ -297,7 +304,7 @@ video {
     color: black; 
     position: absolute;
     top: 350px;
-    left: 350px;
+    left: 390px;
     font-style: italic;
     text-transform: lowercase;
     width: 200px;
