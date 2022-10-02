@@ -19,11 +19,10 @@ header {
     letter-spacing: -0.2px;
     color: rgba(255, 255, 255, 0.723);
     position: fixed;
-    bottom: 130px;
-    left: -130px;
+    bottom: 100px;
+    left: -140px;
     rotate: 90deg;
-
-
+    z-index: 3;
 }
 
 /* Hide content */
@@ -107,6 +106,7 @@ a:active {
     right: 30px;
     font-size: 3.5em;
     color: rgb(255, 255, 255);
+    z-index: 3;
 }
 
 .content-container #nav-container #about h1 {
@@ -151,7 +151,8 @@ a:active {
 
 .circle-inside {
     background-image: url(./images/stars.jpg);
-    opacity: 0.65;
+    background-position: left;
+    opacity: 0.38;
     min-width: 160vh;
     min-height: 160vh;
     border-radius: 50%;
@@ -211,6 +212,15 @@ a:active {
 } */
 
 
+/* Razzle Dazzle Effect */
+
+video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
 
 /* About */
 
