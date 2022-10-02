@@ -97,6 +97,7 @@ a:active {
 
 .show-nav-text {
     font-size: 2.5em;
+    font-style: italic;
     color: rgb(248, 215, 0);
     margin: 0;
 }
@@ -114,12 +115,14 @@ a:active {
     position: fixed;
     top: 50px;
     left: 650px;
+    z-index: 3;
 }
 
 .content-container #nav-container #tarot h1 {
     position: fixed;
     top: 150px;
     left: 300px;
+    z-index: 3;
 }
 
 
@@ -127,12 +130,15 @@ a:active {
     position: fixed;
     top: 230px;
     left: 480px;
+    z-index: 3;
+
 }
 
 .content-container #nav-container #artwork h1 {
     position: fixed;
     top: 370px;
     left: 300px;
+    z-index: 3;
 }
 
 
@@ -140,7 +146,7 @@ a:active {
 
 #circle-show {
     position: fixed;
-    left: 35%;
+    left: 40%;
     top: -15%;
     z-index: -1;
 
@@ -237,11 +243,12 @@ video {
     font-size: 2.5em;
     margin: 10px 0 0 0;
     width: 500px;
+    font-style: italic;
 }
 
 .show-about h2 span {
     font-family: 'Yellowtail';
-    letter-spacing: 0.15em;
+    letter-spacing: -0.2px;
 }
 
 .show-about p em {

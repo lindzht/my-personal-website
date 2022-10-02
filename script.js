@@ -127,10 +127,13 @@ razzleStar.addEventListener("click", function(){
         starClickColorDefault(aboutStar),
         starClickColorDefault(tarotStar),
         starClickColorDefault(artStar),
-        starClickColorDefault(ghStar)
+        starClickColorDefault(ghStar),
+        showAbout.classList.add("hide"),
+        tarotDiv.classList.add("hide");
     } else {
         razzleStarDiv.classList.add("hide");
         removeRazzleStar();
+        circleColorDefault();
         starClickColorDefault(aboutStar),
         starClickColorDefault(tarotStar),
         starClickColorDefault(artStar),
