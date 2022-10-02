@@ -1,17 +1,9 @@
-// const h2 = document.createElement("h2");
-// h2.textContent = "This content added by JavaScript";
-
-// document.querySelector("body").appendChild(h2);
-
-
-
-
-
 
 const aboutStar = document.querySelector("#about .star");
 const tarotStar = document.querySelector("#tarot .star");
 const artStar = document.querySelector("#artwork .star");
 const ghStar = document.querySelector("#github .star");
+const razzleStar = document.querySelector("#razzle-dazzle .star");
 const star = document.querySelectorAll(".star");
 const body = document.querySelector("body");
 
@@ -112,6 +104,39 @@ ghStar.addEventListener("mouseout", function (){
     ghStar.classList.add("star");
 });
 
+// RAZZLE DAZZLE 
+
+const razzleStarDiv = document.querySelector(".razzle-dazzle-div")
+
+razzleStar.addEventListener("mouseover", function(){
+    cursorChange(razzleStar);
+    razzleStar.style.color = "rgb(255, 0, 187)";
+});
+
+razzleStar.addEventListener("mouseout", function(){
+    razzleStar.style.color = "white";
+});
+
+function removeRazzleStar (){
+    razzleStarDiv.classList.add("hide");
+}
+
+razzleStar.addEventListener("click", function(){
+    if (razzleStarDiv.classList.contains("hide")){
+        razzleStarDiv.classList.remove("hide")
+        starClickColorDefault(aboutStar),
+        starClickColorDefault(tarotStar),
+        starClickColorDefault(artStar),
+        starClickColorDefault(ghStar)
+    } else {
+        razzleStarDiv.classList.add("hide");
+        removeRazzleStar();
+        starClickColorDefault(aboutStar),
+        starClickColorDefault(tarotStar),
+        starClickColorDefault(artStar),
+        starClickColorDefault(ghStar)
+    }
+})
 
 // ABOUT SECTION CLICK EVENT
 
@@ -120,6 +145,8 @@ const showAbout = document.querySelector(".show-about");
 aboutStar.addEventListener("click", function(){
     if (showAbout.classList.contains("hide")){
         showAbout.classList.remove("hide");
+        tarotDiv.classList.add("hide"),
+        removeRazzleStar();
         circleColorDark();
         starClickColorChange(aboutStar)
         starClickColorChange(tarotStar)
@@ -158,7 +185,7 @@ function createDescriptions (){
 createDescriptions();
 createImages();
 
-tarotDeck[0].src = "images/death.png"
+tarotDeck[0].src = "./images/death.png"
 tarotDeck[1].src = "./images/devil.png"
 tarotDeck[2].src = "./images/emporer.png"
 tarotDeck[3].src = "./images/empress.png"
@@ -169,7 +196,6 @@ tarotDeck[7].src = "./images/hierophant.png"
 tarotDeck[8].src = "./images/high-priestess.png"
 tarotDeck[9].src = "./images/judgement.png"
 tarotDeck[10].src = "./images/justice.png"
-tarotDeck[11].src = "./images/king-of-pentacles.png"
 tarotDeck[12].src = "./images/lovers.png"
 tarotDeck[13].src = "./images/magician.png"
 tarotDeck[14].src = "./images/moon.png"
@@ -184,28 +210,27 @@ tarotDeck[21].src = "./images/world.png"
 // tarotDeck[22].src = 'images/death.png';
 
 
-tarotDescription[0] = "Endings, change, transformation, transition";
-tarotDescription[1] = "Endings, change, transformation, transition";
-tarotDescription[2] = "Endings, change, transformation, transition";
-tarotDescription[3] = "Endings, change, transformation, transition";
-tarotDescription[4] = "Endings, change, transformation, transition";
-tarotDescription[5] = "Endings, change, transformation, transition";
-tarotDescription[6] = "Endings, change, transformation, transition";
-tarotDescription[7] = "Endings, change, transformation, transition";
-tarotDescription[8] = "Endings, change, transformation, transition";
-tarotDescription[9] = "Endings, change, transformation, transition";
-tarotDescription[10] = "Endings, change, transformation, transition";
-tarotDescription[11] = "Endings, change, transformation, transition";
-tarotDescription[12] = "Endings, change, transformation, transition";
-tarotDescription[13] = "Endings, change, transformation, transition";
-tarotDescription[14] = "Endings, change, transformation, transition";
-tarotDescription[15] = "Endings, change, transformation, transition";
-tarotDescription[16] = "Endings, change, transformation, transition";
-tarotDescription[17] = "Endings, change, transformation, transition";
-tarotDescription[18] = "Endings, change, transformation, transition";
-tarotDescription[19] = "Endings, change, transformation, transition";
-tarotDescription[20] = "Endings, change, transformation, transition";
-tarotDescription[21] = "Endings, change, transformation, transition";
+tarotDescription[0] = "endings, change, transformation, transition";
+tarotDescription[1] = "shadow-self, bad habits, instant gratification, restriction";
+tarotDescription[2] = "structure, authority figure, leader, protector";
+tarotDescription[3] = "abundance, nurturing, creative expression, beauty";
+tarotDescription[4] = "new beginnings, free spirit, potential, opportunity";
+tarotDescription[5] = "pause, surrender, letting go, new perspectives";
+tarotDescription[6] = "inner guidance, introspection, being alone, authentic self";
+tarotDescription[7] = "traditions, beliefs, learning/teaching, practice";
+tarotDescription[8] = "intuition, divine knowledge, subconscious mind, spiritual enlightenment";
+tarotDescription[9] = "judgement, rebirth, inner calling, higher good";
+tarotDescription[10] = "justice, fairness, search for the truth, choice";
+tarotDescription[12] = "love, harmony, meaningful relationships, values and beliefs";
+tarotDescription[13] = "manifestation, power, inspired action, focus";
+tarotDescription[14] = "illusion, internalized fear/anxiety, subconscious, intuition";
+tarotDescription[15] = "hope, sense of self, renewal/personal growth, calm";
+tarotDescription[16] = "inner strength, courage, determination, confidence";
+tarotDescription[17] = "positivity, success, happiness, radiant/warm energy";
+tarotDescription[18] = "balance, moderation, patience, guided approach to goals";
+tarotDescription[19] = "sudden change, destruction, surrender, re-build";
+tarotDescription[20] = "good luck, destiny, turning point, opportunities";
+tarotDescription[21] = "accomplishment, completion, wholeness, fulfillment";
 
 
 
@@ -226,6 +251,7 @@ tarotStar.addEventListener("click", function(){
     if (tarotDiv.classList.contains("hide")){
         showAbout.classList.add("hide"),
         tarotDiv.classList.remove("hide");
+        removeRazzleStar();
         starClickColorChange(aboutStar)
         starClickColorChange(tarotStar)
         starClickColorChange(artStar)

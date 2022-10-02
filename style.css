@@ -14,15 +14,15 @@ body {
 }
 
 header {
-    font-size: 2em;
-    font-weight: 900;
+    font-size: 2.7em;
     font-family: 'Yellowtail';
-    letter-spacing: 0.3em;
-    color: white;
+    letter-spacing: -0.2px;
+    color: rgba(255, 255, 255, 0.723);
     position: fixed;
-    bottom: 170px;
-    left: -160px;
+    bottom: 130px;
+    left: -130px;
     rotate: 90deg;
+
 
 }
 
@@ -112,28 +112,27 @@ a:active {
 .content-container #nav-container #about h1 {
     position: fixed;
     top: 50px;
-    left: 480px;
+    left: 550px;
 }
 
 .content-container #nav-container #tarot h1 {
     position: fixed;
     top: 150px;
-    left: 150px;
+    left: 200px;
 }
 
 
 .content-container #nav-container #github h1 {
     position: fixed;
     top: 230px;
-    left: 370px;
+    left: 400px;
 }
 
 .content-container #nav-container #artwork h1 {
     position: fixed;
     top: 370px;
-    left: 170px;
+    left: 230px;
 }
-
 
 
 /* Circle Background */
@@ -153,8 +152,8 @@ a:active {
 .circle-inside {
     background-image: url(./images/stars.jpg);
     opacity: 0.65;
-    min-width: 150vh;
-    min-height: 150vh;
+    min-width: 160vh;
+    min-height: 160vh;
     border-radius: 50%;
 }
 
@@ -168,8 +167,8 @@ a:active {
     background-image: url(./images/light-3.png);
     background-position: center;
     opacity: 0.75;
-    min-width: 150vh;
-    min-height: 150vh;
+    min-width: 160vh;
+    min-height: 160vh;
     border-radius: 50%;
     background-color:rgba(255, 115, 0, 0.493);
     background-blend-mode: overlay;
@@ -219,7 +218,7 @@ a:active {
 .show-about {
     position: relative;
     top: 250px;
-    left: 90px;
+    left: 120px;
     color: black;
 }
 
@@ -243,7 +242,7 @@ a:active {
 .show-about #bio {
     position: absolute;
     top: 10px;
-    left: 330px;
+    left: 360px;
     width: 330px;
     text-align: left;
     font-size: 1.2em;
@@ -261,7 +260,7 @@ a:active {
     align-items:flex-start;
     justify-content: left; */
     position: relative;
-    max-width: 400px;
+    max-width: 600px;
 
 }
 
@@ -270,19 +269,20 @@ a:active {
     border-radius: 18%;
     position: absolute;
     top: 250px;
-    left: 10px;
+    left: 50px;
 }
 
 .tarot-description {
     text-align: left;
     line-height: 1.3em;
-    font-size: 2em;
+    font-size: 1.5em;
     color: black; 
     position: absolute;
     top: 350px;
-    left: 300px;
+    left: 350px;
     font-style: italic;
     text-transform: lowercase;
+    width: 200px;
 }
 
 
