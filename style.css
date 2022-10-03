@@ -250,7 +250,7 @@ header {
         position: absolute;
         top: 0px;
         left: 350px;
-        width: 380px;
+        width: 330px;
         text-align: left;
         color: black;
     }
@@ -288,7 +288,8 @@ header {
 
     .show-about a {
         color: rgb(255, 82, 2);
-        font-size: 1.6em;
+        font-size: 1.3em;
+        text-decoration: underline;
     }
 
 
