@@ -26,7 +26,7 @@ header {
     font-family: 'Yellowtail';
     letter-spacing: -0.2px;
     line-height: 210px;
-    color: rgb(190, 224, 255);
+    color: rgba(248, 215, 0, 0.913);
     position: fixed;
     top: -180px;
     left: -4px;
@@ -54,8 +54,7 @@ header {
 
 #temp-mobile-splash h2 { 
     font-family: 'Yellowtail';
-    color: rgba(248, 215, 0, 0.913);
-    font-size: 1.6em;
+    font-size: 1.58em;
 }
 
 /* #temp-mobile-splash p,
