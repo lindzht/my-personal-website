@@ -10,21 +10,21 @@ body {
 }
 
 header {
-    font-size: 6em;
+    max-width: 100vw;
+    font-size: 5.5em;
     font-family: 'Yellowtail';
     letter-spacing: -0.2px;
     color: rgb(190, 224, 255);
     position: fixed;
-    top: -180px;
-    left: -7px;
+    top: -170px;
+    left: -4px;
     z-index: 3;
-    max-width: ;
 }
 
 #temp-mobile-splash {
     position: absolute;
     top: 28%;
-    line-height: 0.35em;
+    line-height: 1em;
     text-align: center;
     font-size: 3.8em;
     
