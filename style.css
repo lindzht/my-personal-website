@@ -43,7 +43,7 @@ header {
     font-size: 3em;
     text-decoration: none;
     color: black;
-    line-height: 70px;
+    line-height: 100px;
 }
 
 #temp-mobile-splash img {
@@ -72,7 +72,7 @@ header {
         letter-spacing: -0.2px;
         color: rgb(190, 224, 255);
         position: fixed;
-        top: 109px;
+        top: 114px;
         left: -218px;
         rotate: 90deg;
         z-index: 3;
