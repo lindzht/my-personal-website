@@ -11,7 +11,8 @@ body {
 }
 
 header {
-    font-size: 5.8em;
+    font-size: 5.9em;
+    width: 900px;
     font-family: 'Yellowtail';
     letter-spacing: -0.2px;
     color: rgb(190, 224, 255);
@@ -24,7 +25,7 @@ header {
 #temp-mobile-splash {
     position: absolute;
     top: 28%;
-    line-height: 30px;
+    line-height: 40px;
     text-align: center;   
 }
 
@@ -43,11 +44,11 @@ header {
 }
 
 #temp-mobile-splash a {
-    font-size: 8em;
+    font-size: 6em;
 }
 
 #temp-mobile-splash img {
-    max-width: 30%;
+    max-width: 40%;
 }
 
 
