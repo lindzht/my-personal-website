@@ -201,6 +201,7 @@ tarotDeck[7].src = "./images/hierophant.png"
 tarotDeck[8].src = "./images/high-priestess.png"
 tarotDeck[9].src = "./images/judgement.png"
 tarotDeck[10].src = "./images/justice.png"
+tarotDeck[11].src = "./images/chariot.jpg"
 tarotDeck[12].src = "./images/lovers.png"
 tarotDeck[13].src = "./images/magician.png"
 tarotDeck[14].src = "./images/moon.png"
@@ -211,8 +212,6 @@ tarotDeck[18].src = "./images/temperance.png"
 tarotDeck[19].src = "./images/tower.png"
 tarotDeck[20].src = "./images/wheel-fortune.png"
 tarotDeck[21].src = "./images/world.png"
-// tarotDeck[22] = img;
-// tarotDeck[22].src = 'images/death.png';
 
 
 tarotDescription[0] = "endings, change, transformation, transition";
@@ -226,6 +225,7 @@ tarotDescription[7] = "traditions, beliefs, learning/teaching, practice";
 tarotDescription[8] = "intuition, divine knowledge, subconscious mind, spiritual enlightenment";
 tarotDescription[9] = "judgement, rebirth, inner calling, higher good";
 tarotDescription[10] = "justice, fairness, search for the truth, choice";
+tarotDescription[11] = "determination, willpower, focused action, success";
 tarotDescription[12] = "love, harmony, meaningful relationships, values and beliefs";
 tarotDescription[13] = "manifestation, power, inspired action, focus";
 tarotDescription[14] = "illusion, internalized fear/anxiety, subconscious, intuition";
