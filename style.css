@@ -1,273 +1,324 @@
-/* Global Styles */
-
 body {
     background-image: url(./images/light-1.png);
     background-position-y: top;
-    background-size: cover;
-    font-family: 'Josefin Sans';
+    background-size:auto;
+    z-index: 4;
+}
+
+.content-container {
+    display: none;
 }
 
 header {
-    font-size: 4em;
+    font-size: 6.6em;
     font-family: 'Yellowtail';
     letter-spacing: -0.2px;
     color: rgb(190, 224, 255);
     position: fixed;
-    top: 117px;
-    left: -218px;
-    rotate: 90deg;
+    top: -200px;
+    left: 0px;
     z-index: 3;
 }
 
-/* Hide content */
-
-.hide {
-    display: none;
-}
-
-
-
-/* Splash Page */
-
-#splash-page-container-show{
-    height: 100vh;
-    width: 100vw;
-    opacity: 0.9;
-    background-image: url("https://images.squarespace-cdn.com/content/v1/52001f7ce4b0929e453b7ea1/1484271450322-JI8WZD7UXA3NLGTGNEW5/installationdetail1.jpg?format=2500w");
-    background-position: left;
-}
-
-
-/* Links */
-a {
-    text-decoration: none;
-}
-
-a:link {
-    color: rgba(0, 0, 0, 0.913);
-}
-
-a:visited {
-    color: #000;
-}
-
-a:hover {
-    color:rgba(248, 215, 0, 0.913);
-}
-
-a:active {
-    color:rgba(248, 215, 0, 0.913);
-}
-
-
-
-/* Body */
-
-.content-container {
-    /* position: relative; */
-    display: flex;
-    align-items: center;
-    justify-content: center;    
-    max-height: 700px;
-}
-
-
-/* Navigation */
-
-.star {
-    font-size: 6em;
-    font-weight: 900;
-    margin: 0px;
-    padding: 0px;
-    color: rgb(248, 215, 0);
-    z-index: 3;
-}
-
-.star-click {
-    font-size: 6em;
-    font-weight: 900;
-    margin: 0;
-    color:rgb(255, 107, 2);
-}
-
-.show-nav-text {
-    font-size: 2.7em;
-    font-style: italic;
-    color: rgb(248, 215, 0);
-    margin: 0px;
-}
-
-.content-container #nav-container #razzle-dazzle h1 {
-    position: fixed;
-    top: 10px;
-    right: 30px;
-    font-size: 3.5em;
-    color: white;
-    z-index: 3;
-}
-
-.content-container #nav-container #about h1 {
-    position: fixed;
-    top: 50px;
-    left: 580px;
-    z-index: 3;
-}
-
-.content-container #nav-container #tarot h1 {
-    position: fixed;
-    top: 130px;
-    left: 280px;
-    z-index: 3;
-}
-
-
-.content-container #nav-container #github h1 {
-    position: fixed;
-    top: 230px;
-    left: 450px;
-    z-index: 3;
-
-}
-
-.content-container #nav-container #artwork h1 {
-    position: fixed;
-    top: 370px;
-    left: 200px;
-    z-index: 3;
-}
-
-
-/* Circle Background */
-
-#circle-show {
-    position: fixed;
-    left: 40%;
-    top: -15%;
-    z-index: -1;
-}
-
-.circle-inside {
-    background-image: url(./images/stars.jpg);
-    background-position: left;
-    opacity: 0.48;
-    min-width: 160vh;
-    min-height: 160vh;
-    border-radius: 50%;
-}
-
-.circle-inside-dark{
-    background-image: url(./images/light-3.png);
-    background-position: center;
-    opacity: 0.75;
-    min-width: 160vh;
-    min-height: 160vh;
-    border-radius: 50%;
-    background-color:rgba(255, 115, 0, 0.493);
-    background-blend-mode: overlay;
-
-}
-
-
-/* Razzle Dazzle Effect */
-
-video {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-}
-
-/* About */
-
-
-.show-about {
-    position: relative;
-    top: 250px;
-    left: 150px;
-}
-
-.show-about img {
-    border: 8px solid rgba(233, 208, 187, 0.685);
-    border-radius: 50%;
-}
-
-.show-about #bio {
+#temp-mobile-splash {
     position: absolute;
-    top: 0px;
-    left: 350px;
-    width: 380px;
-    text-align: left;
+    top: 15%;
+    left: 28%;
+    line-height: 30px;
+}
+
+#temp-mobile-splash h2 {
+    font-size: 3em;
+    font-family: 'Yellowtail';
+    color: rgba(248, 215, 0, 0.913);
+}
+
+p,
+a {
+    font-family: 'Josefin Sans'; 
+    font-size: 1.8em;
+    text-decoration: none;
     color: black;
 }
 
-.show-about h2 {
-    font-size: 3.5em;
-    margin: 5px 0 -10px 0;
-}
-
-.show-about h2 span {
-    font-family: 'Yellowtail';
-    letter-spacing: -0.2px;
+#temp-mobile-splash a {
+    font-size: 7em;
 }
 
 
-.show-about #bio p em {
-    font-size: 1.7em;
-}
-
-.show-about #bio-list ul {
-    margin: 0 0 30px 0;
-}
-
-.show-about #bio-list ul li:first-child {
-    color: rgb(255, 82, 2);
-    margin: 30px 0 30px -40px;
-}
-
-.show-about #bio-list ul li {
-    margin: 25px 0 10px -40px;
-    line-height: 3px;
-    font-size: 1.09em;
-    list-style: none;
-}
-
-.show-about a {
-    color: rgb(255, 82, 2);
-    font-size: 1.6em;
-}
 
 
-/* Tarot Card */
+/* Laptop Breakpoint */
 
-.tarot-display {
-    position: relative;
-    max-width: 900px;
-    left: 20px;
-    top: -50px;
-}
+@media only screen and (min-width: 992px) {
 
-.tarot-card img{
-    border: 8px solid rgba(233, 208, 187, 0.685);
-    border-radius: 18%;
-    position: absolute;
-    top: 250px;
-    left: 130px;
-}
+/* Laptop Global Styles */
 
-.tarot-description {
-    text-align: left;
-    line-height: 1.3em;
-    font-size: 1.7em;
-    color: black; 
-    position: absolute;
-    top: 350px;
-    left: 398px;
-    font-style: italic;
-    text-transform: lowercase;
-    max-width: 500px;
-}
+    body {
+        background-image: url(./images/light-1.png);
+        background-position-y: top;
+        background-size: cover;
+        font-family: 'Josefin Sans';
+    }
 
+    header {
+        font-size: 4em;
+        font-family: 'Yellowtail';
+        letter-spacing: -0.2px;
+        color: rgb(190, 224, 255);
+        position: fixed;
+        top: 117px;
+        left: -218px;
+        rotate: 90deg;
+        z-index: 3;
+    }
+
+    /* Hide content */
+
+    .hide {
+        display: none;
+    }
+
+
+
+    /* Splash Page */
+
+    #temp-mobile-splash {
+        display: none;
+    }
+
+
+    /* Links */
+    a {
+        text-decoration: none;
+    }
+
+    a:link {
+        color: rgba(0, 0, 0, 0.913);
+    }
+
+    a:visited {
+        color: #000;
+    }
+
+    a:hover {
+        color:rgba(248, 215, 0, 0.913);
+    }
+
+    a:active {
+        color:rgba(248, 215, 0, 0.913);
+    }
+
+
+
+    /* Body */
+
+    .content-container {
+        /* position: relative; */
+        display: flex;
+        align-items: center;
+        justify-content: center;    
+        max-height: 700px;
+    }
+
+
+    /* Navigation */
+
+    .star {
+        font-size: 6em;
+        font-weight: 900;
+        margin: 0px;
+        padding: 0px;
+        color: rgb(248, 215, 0);
+        z-index: 3;
+    }
+
+    .star-click {
+        font-size: 6em;
+        font-weight: 900;
+        margin: 0;
+        color:rgb(255, 107, 2);
+    }
+
+    .show-nav-text {
+        font-size: 2.7em;
+        font-style: italic;
+        color: rgb(248, 215, 0);
+        margin: 0px;
+    }
+
+    .content-container #nav-container #razzle-dazzle h1 {
+        position: fixed;
+        top: 10px;
+        right: 30px;
+        font-size: 3.5em;
+        color: white;
+        z-index: 3;
+    }
+
+    .content-container #nav-container #about h1 {
+        position: fixed;
+        top: 50px;
+        left: 580px;
+        z-index: 3;
+    }
+
+    .content-container #nav-container #tarot h1 {
+        position: fixed;
+        top: 130px;
+        left: 280px;
+        z-index: 3;
+    }
+
+
+    .content-container #nav-container #github h1 {
+        position: fixed;
+        top: 230px;
+        left: 450px;
+        z-index: 3;
+
+    }
+
+    .content-container #nav-container #artwork h1 {
+        position: fixed;
+        top: 370px;
+        left: 200px;
+        z-index: 3;
+    }
+
+
+    /* Circle Background */
+
+    #circle-show {
+        position: fixed;
+        left: 40%;
+        top: -15%;
+        z-index: -1;
+    }
+
+    .circle-inside {
+        background-image: url(./images/stars.jpg);
+        background-position: left;
+        opacity: 0.48;
+        min-width: 160vh;
+        min-height: 160vh;
+        border-radius: 50%;
+    }
+
+    .circle-inside-dark{
+        background-image: url(./images/light-3.png);
+        background-position: center;
+        opacity: 0.75;
+        min-width: 160vh;
+        min-height: 160vh;
+        border-radius: 50%;
+        background-color:rgba(255, 115, 0, 0.493);
+        background-blend-mode: overlay;
+
+    }
+
+
+    /* Razzle Dazzle Effect */
+
+    video {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+    }
+
+    /* About */
+
+
+    .show-about {
+        position: relative;
+        top: 250px;
+        left: 150px;
+    }
+
+    .show-about img {
+        border: 8px solid rgba(233, 208, 187, 0.685);
+        border-radius: 50%;
+    }
+
+    .show-about #bio {
+        position: absolute;
+        top: 0px;
+        left: 350px;
+        width: 380px;
+        text-align: left;
+        color: black;
+    }
+
+    .show-about h2 {
+        font-size: 3.5em;
+        margin: 5px 0 -10px 0;
+    }
+
+    .show-about h2 span {
+        font-family: 'Yellowtail';
+        letter-spacing: -0.2px;
+    }
+
+
+    .show-about #bio p em {
+        font-size: 1.7em;
+    }
+
+    .show-about #bio-list ul {
+        margin: 0 0 30px 0;
+    }
+
+    .show-about #bio-list ul li:first-child {
+        color: rgb(255, 82, 2);
+        margin: 30px 0 30px -40px;
+    }
+
+    .show-about #bio-list ul li {
+        margin: 25px 0 10px -40px;
+        line-height: 3px;
+        font-size: 1.09em;
+        list-style: none;
+    }
+
+    .show-about a {
+        color: rgb(255, 82, 2);
+        font-size: 1.6em;
+    }
+
+
+    /* Tarot Card */
+
+    .tarot-display {
+        position: relative;
+        max-width: 900px;
+        left: 20px;
+        top: -50px;
+    }
+
+    .tarot-card img{
+        border: 8px solid rgba(233, 208, 187, 0.685);
+        border-radius: 18%;
+        position: absolute;
+        top: 250px;
+        left: 130px;
+    }
+
+    .tarot-description {
+        text-align: left;
+        line-height: 1.3em;
+        font-size: 1.7em;
+        color: black; 
+        position: absolute;
+        top: 350px;
+        left: 398px;
+        font-style: italic;
+        text-transform: lowercase;
+        max-width: 500px;
+    }
+
+};
 
 
 /* Circle Background Colors only
