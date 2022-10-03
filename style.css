@@ -25,17 +25,17 @@ header {
     font-size: 8.8em;
     font-family: 'Yellowtail';
     letter-spacing: -0.2px;
-    line-height: 210px;
+    line-height: 190px;
     color: rgba(248, 215, 0, 0.913);
     position: fixed;
-    top: -180px;
+    top: -170px;
     left: -4px;
 }
 
 #temp-mobile-splash {
     position: absolute;
-    top: 33%;
-    line-height: 20px;
+    top: 35%;
+    line-height: 18px;
     text-align: center; 
     font-family: 'Josefin Sans'; 
     text-decoration: none;
@@ -53,7 +53,7 @@ header {
 } */
 
 #temp-mobile-splash h2 { 
-    font-size: 1.3em;
+    font-size: 1.1em;
 }
 
 /* #temp-mobile-splash p,
@@ -65,7 +65,7 @@ header {
 } */
 
 #temp-mobile-splash a {
-    font-size: 3em;
+    font-size: 2.5em;
     text-decoration: none;
     color: black;
     line-height: 80px;
@@ -101,7 +101,7 @@ header {
         letter-spacing: -0.2px;
         color: rgb(190, 224, 255);
         position: fixed;
-        top: 98px;
+        top: 109px;
         left: -218px;
         rotate: 90deg;
         z-index: 3;
