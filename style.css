@@ -196,7 +196,7 @@ video {
     position: absolute;
     top: 0px;
     left: 350px;
-    width: 300px;
+    width: 400px;
     text-align: left;
     color: black;
 }
@@ -204,7 +204,6 @@ video {
 .show-about h2 {
     font-size: 3.5em;
     margin: 5px 0 -10px 0;
-    width: 500px;
 }
 
 .show-about h2 span {
