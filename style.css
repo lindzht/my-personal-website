@@ -10,17 +10,6 @@ body {
     display: none;
 }
 
-/* header {
-    font-size: 5.8em;
-    font-family: 'Yellowtail';
-    letter-spacing: -0.2px;
-    line-height: 130px;
-    color: rgb(190, 224, 255);
-    position: fixed;
-    top: -110px;
-    left: -4px;
-} */
-
 header {
     font-size: 8.8em;
     font-family: 'Yellowtail';
@@ -36,7 +25,7 @@ header {
     position: absolute;
     top: 35%;
     line-height: 18px;
-    letter-spacing: -1.3px;
+    letter-spacing: -1.4px;
     text-align: center; 
     font-family: 'Josefin Sans'; 
     text-decoration: none;
@@ -45,36 +34,17 @@ header {
       
 }
 
-/* #temp-mobile-splash {
-    position: absolute;
-    top: 28%;
-    line-height: 40px;
-    text-align: center; 
-      
-} */
-
 #temp-mobile-splash h2 { 
     font-size: 1.1em;
 }
 
-/* #temp-mobile-splash p,
-#temp-mobile-splash a {
-    font-family: 'Josefin Sans'; 
-    text-decoration: none;
-    color: black;
-    font-size: 3em;
-} */
 
 #temp-mobile-splash a {
     font-size: 3em;
     text-decoration: none;
     color: black;
+    line-height: 50px;
 }
-
-/* #temp-mobile-splash a {
-    font-size: 6em;
-    ✉
-} */
 
 #temp-mobile-splash img {
     max-width: 43%;
