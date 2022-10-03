@@ -22,7 +22,7 @@ body {
 } */
 
 header {
-    font-size: 9.3em;
+    font-size: 9em;
     font-family: 'Yellowtail';
     letter-spacing: -0.2px;
     line-height: 210px;
@@ -34,8 +34,8 @@ header {
 
 #temp-mobile-splash {
     position: absolute;
-    top: 30%;
-    line-height: 50px;
+    top: 33%;
+    line-height: 30px;
     text-align: center; 
     font-family: 'Josefin Sans'; 
     text-decoration: none;
@@ -55,7 +55,7 @@ header {
 #temp-mobile-splash h2 { 
     font-family: 'Yellowtail';
     color: rgba(248, 215, 0, 0.913);
-    font-size: 1.7em;
+    font-size: 1.6em;
 }
 
 /* #temp-mobile-splash p,
@@ -69,7 +69,8 @@ header {
 #temp-mobile-splash a {
     font-size: 3em;
     text-decoration: none;
-    color: black
+    color: black;
+    line-height: 80px;
 }
 
 /* #temp-mobile-splash a {
@@ -78,6 +79,7 @@ header {
 
 #temp-mobile-splash img {
     max-width: 43%;
+    margin: 0 0 -20px 0;
 }
 
 
