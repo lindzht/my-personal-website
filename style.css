@@ -214,7 +214,7 @@ video {
 
 
 .show-about #bio p em {
-    font-size: 2em;
+    font-size: 1.7em;
 }
 
 .show-about #bio-list ul {
@@ -229,7 +229,7 @@ video {
 .show-about #bio-list ul li {
     margin: 25px 0 10px -40px;
     line-height: 3px;
-    font-size: 1.2em;
+    font-size: 1.09em;
     list-style: none;
 }
 
@@ -259,7 +259,7 @@ video {
 .tarot-description {
     text-align: left;
     line-height: 1.3em;
-    font-size: 1.8em;
+    font-size: 1.7em;
     color: black; 
     position: absolute;
     top: 350px;
