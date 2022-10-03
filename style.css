@@ -10,7 +10,7 @@ body {
     display: none;
 }
 
-header {
+/* header {
     font-size: 5.8em;
     font-family: 'Yellowtail';
     letter-spacing: -0.2px;
@@ -19,32 +19,62 @@ header {
     position: fixed;
     top: -110px;
     left: -4px;
+} */
+
+header {
+    font-size: 10em;
+    font-family: 'Yellowtail';
+    letter-spacing: -0.2px;
+    line-height: 210px;
+    color: rgb(190, 224, 255);
+    position: fixed;
+    top: -190px;
+    left: -4px;
 }
 
 #temp-mobile-splash {
     position: absolute;
     top: 28%;
     line-height: 40px;
-    text-align: center;   
+    text-align: center; 
+    font-family: 'Josefin Sans'; 
+    text-decoration: none;
+    color: black;
+    font-size: 3em;
+      
 }
+
+/* #temp-mobile-splash {
+    position: absolute;
+    top: 28%;
+    line-height: 40px;
+    text-align: center; 
+      
+} */
 
 #temp-mobile-splash h2 { 
     font-family: 'Yellowtail';
     color: rgba(248, 215, 0, 0.913);
-    font-size: 4.5em;
+    font-size: 2em;
 }
 
-#temp-mobile-splash p,
+/* #temp-mobile-splash p,
 #temp-mobile-splash a {
     font-family: 'Josefin Sans'; 
     text-decoration: none;
     color: black;
     font-size: 3em;
-}
+} */
 
 #temp-mobile-splash a {
-    font-size: 6em;
+    font-size: 3em;
+    text-decoration: none;
+    color: black
 }
+
+/* #temp-mobile-splash a {
+    font-size: 6em;
+} */
 
 #temp-mobile-splash img {
     max-width: 40%;
@@ -71,7 +101,7 @@ header {
         letter-spacing: -0.2px;
         color: rgb(190, 224, 255);
         position: fixed;
-        top: 140px;
+        top: 98px;
         left: -218px;
         rotate: 90deg;
         z-index: 3;
