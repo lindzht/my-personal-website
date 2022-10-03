@@ -14,9 +14,10 @@ header {
     font-size: 5.8em;
     font-family: 'Yellowtail';
     letter-spacing: -0.2px;
+    line-height: 130px;
     color: rgb(190, 224, 255);
     position: fixed;
-    top: -170px;
+    top: -110px;
     left: -4px;
 }
 
@@ -70,7 +71,7 @@ header {
         letter-spacing: -0.2px;
         color: rgb(190, 224, 255);
         position: fixed;
-        top: 117px;
+        top: 140px;
         left: -218px;
         rotate: 90deg;
         z-index: 3;
